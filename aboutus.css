@@ -774,7 +774,7 @@ nav {
 .member-one,
 .member-two,
 .member-three {
-    width: 33%;
+    width: 25%;
     /* Adjust width to fit three items per row */
     padding: 20px 0;
     /* Add some vertical padding */
@@ -1045,7 +1045,7 @@ nav {
     .member-one,
     .member-two,
     .member-three {
-        width: 45%;
+        width: 50%;
         /* Two members per row on tablets */
         margin-bottom: 30px;
         /* Space between rows */
