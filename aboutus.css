@@ -766,7 +766,7 @@ nav {
     display: flex;
     width: 80%;
     padding-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     /* Allow items to wrap to the next line */
 }
@@ -815,6 +815,7 @@ nav {
     text-align: center;
     /* Ensure text is centered */
 }
+
 
 /* PART THREE */
 .aboutpage-partthree {

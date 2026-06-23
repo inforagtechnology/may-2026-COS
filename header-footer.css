@@ -1142,6 +1142,7 @@ footer::after {
   position: relative;
   z-index: 1;
   text-align: center;
+  background-color: #070713;
 }
 .footer-parttwo h3 {
   font-size: 12.5px !important;
