@@ -100,7 +100,7 @@
  .card-title span {
      font-size: 17px;
      font-weight: 600;
-     color: #1e2937;
+     color: #233042;
      /* Dark for (Offline / Online) */
  }
 
@@ -108,7 +108,7 @@
      display: flex;
      gap: 16px;
      margin-bottom: 18px;
-     color: #334155;
+     color: #3c516f;
      font-size: 14.8px;
      flex-wrap: wrap;
  }
