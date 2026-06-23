@@ -1545,7 +1545,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 1024px) {
     .slide-item {
-        width: 200px;
+        width: 229px;
     }
 
     .slide-item img {
@@ -1569,7 +1569,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 768px) {
     .slide-item {
-        width: 160px;
+        width: 229px;
     }
 
     .slide-item img {
@@ -1599,7 +1599,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 480px) {
     .slide-item {
-        width: 130px;
+        width: 229px;
     }
 
     .slide-item img {

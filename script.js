@@ -701,3 +701,19 @@ const observer = new IntersectionObserver((entries) => {
 cards.forEach(card => observer.observe(card));
 
 
+// Annimation for Learning Section
+document.addEventListener('DOMContentLoaded', () => {
+  const cols = document.querySelectorAll('.learning-format-col');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      } else {
+        entry.target.classList.remove('is-visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cols.forEach(col => observer.observe(col));
+});
