@@ -1857,6 +1857,7 @@ img { display: block; max-width: 100%; }
     gap: 60px;
     width: max-content;
     animation: galleryScroll 20s linear infinite;
+    margin: 63px 0px;
 }
 
 @keyframes galleryScroll {

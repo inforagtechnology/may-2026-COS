@@ -191,9 +191,10 @@
  /* broucher css */
  .brochure-container {
      max-width: 1450px;
-     margin: 30px auto;
+     margin: 63px auto;
      padding: 30px;
-     background: #0e264a;
+     /* background: #0e264a; */
+         background: radial-gradient(circle, rgba(51, 74, 204, 1) 0%, rgb(10, 18, 60) 56%);
      border-radius: 12px;
 
      display: flex;
@@ -229,13 +230,13 @@
  }
 
  .brochure-btn button {
-     padding: 15px 30px;
+     padding: 15px 26px;
      border: none;
      border-radius: 30px;
      background: var(--gold) ;
      color: black;
      font-size: 25px;
-     font-weight: 600;
+     font-weight: 400;
      cursor: pointer;
  }
 
@@ -243,7 +244,7 @@
     .brochure-container {
         flex-direction: column;
         text-align: center;
-        margin: 20px 15px;
+        margin: 62px 15px 35px 15px;
         padding: 25px;
         gap: 20px;
     }
@@ -587,7 +588,7 @@
  /* White FAQ Container */
  .faq-container {
      max-width: 1400px;
-     margin: 0 auto;
+     margin: 35px auto;
      background: #fff;
      padding: 40px;
      border-radius: 15px;
