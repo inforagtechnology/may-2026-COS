@@ -22,7 +22,7 @@ body {
 
 /* ----------------- Contact Part One ----------------- */
 .contact-part-one {
-    padding-top: 70px;
+    /* padding-top: 70px; */
     border-bottom: rgba(255, 255, 255,0.3) 1px solid;
     width: 100%; /* Changed from 100% for full viewport width */
     display: flex;
@@ -73,7 +73,7 @@ body {
     display: flex;
     margin-top: 20px;
      /* Changed to column for better mobile stacking */
-    padding: 15% 0px 20% 0px;
+    padding: 0% 0px 20% 0px;
 }
 /* .contact-medium {
     width: 100%;
@@ -191,12 +191,11 @@ body {
 /* ------------------------------------------- */
 @media (max-width:1500px) {
      .contact-part-one {
-        padding-top: 50px;
         width: 100%;
     }
 
     .contact-head-one {
-        padding: 80px 0px 50px 0px;
+        padding: 30px 0px 50px 0px;
         font-size: 45px;
     }
 
@@ -209,10 +208,11 @@ body {
 
      .form-left-part{
         width: 100%; /* Take full width when stacked */
-        padding: 5% 0px; /* Adjust padding for stacked layout */
+        padding: 0px 0px; Adjust padding for stacked layout
     }
     .form-right-part {
         width: 80%; /* Take full width when stacked */
+        
         /* padding: 5% 20px; Adjust padding for stacked layout */
     }
     .section-two {
@@ -224,7 +224,6 @@ body {
 /* Tablets and smaller desktops (e.g., max-width: 1024px) */
 @media (max-width: 1024px) {
     .contact-part-one {
-        padding-top: 50px;
         width: 100%;
     }
 
@@ -304,7 +303,6 @@ body {
     }
 
     .contact-part-one {
-        padding-top: 30px;
         border-bottom: rgb(255, 255, 255) 2px solid;
     }
 
