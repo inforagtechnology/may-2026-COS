@@ -144,6 +144,8 @@ css/* ════════════════════════�
   flex-direction: column;
   align-items: center;
   padding: 0px 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ════════════════════════════════════════════════════════════════════════════
@@ -157,6 +159,9 @@ css/* ════════════════════════�
   margin-bottom: 1.25rem;
   box-shadow: var(--shadow);
   width: 91%;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow: hidden;
 }
 .section-card h2 {
   font-size: 21px;
@@ -192,6 +197,7 @@ css/* ════════════════════════�
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 1.1rem;
+  min-width: 0;
 }
 .review-top    { display: flex; align-items: center; gap: .7rem; margin-bottom: .7rem; }
 .review-avatar {
@@ -203,10 +209,56 @@ css/* ════════════════════════�
 .review-name  { font-weight: 700; font-size: 14px; color: wheat; }
 .review-stars { font-size: 12px; color: var(--gold); letter-spacing: 1px; }
 .review-date  { font-size: 11px; color: var(--ink-l); margin-top: 1px; }
-.review-text  { font-size: 13px; color: var(--ink-m); line-height: 1.7; }
+.review-text  { font-size: 13px; color: var(--ink-m); line-height: 1.7; word-wrap: break-word; }
 .helpful      { font-size: 11px; color: var(--ink-l); margin-top: .65rem; cursor: pointer; }
 .helpful span { color: var(--indigo); font-weight: 600; }
 
+/* ════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE — TABLET
+   ════════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .section-card {
+    width: 94%;
+    padding: 1.5rem;
+  }
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE — MOBILE
+   ════════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .section-card {
+    width: 100%;
+    padding: 1.1rem;
+    border-radius: 14px;
+  }
+  .section-card h2 {
+    font-size: 18px;
+  }
+
+  .rating-summary {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .rating-big {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  .rating-num { font-size: 42px; }
+  .rating-bars { min-width: 0; width: 100%; }
+  .bar-stars { min-width: 24px; font-size: 11px; }
+
+  .reviews-grid { gap: .85rem; }
+  .review-card { padding: 1rem; }
+  .review-name { font-size: 13px; }
+  .review-text { font-size: 12.5px; }
+}
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
