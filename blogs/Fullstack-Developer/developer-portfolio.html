@@ -4,136 +4,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Blog - Dashboard</title>
-    <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
-    <link rel="stylesheet" href="../Blog-main.css">
+    <title>How to Build a Developer Portfolio That Gets You Hired | Code Of School</title>
+
+    <meta name="description"
+        content="Learn how to build a professional developer portfolio with projects, GitHub, and practical skills to impress recruiters with Code Of School.">
+
+    <meta name="keywords"
+        content="how to build a developer portfolio, best full-stack development course in Indore, developer portfolio tips, GitHub portfolio, MERN stack projects, Code Of School, , web developer portfolio, full stack development, software developer portfolio">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Code Of School">
+
+    <meta property="og:title" content="How to Build a Developer Portfolio That Gets You Hired | Code Of School">
+
+    <meta property="og:description"
+        content="Learn how to build a professional developer portfolio with projects, GitHub, and practical skills to impress recruiters with Code Of School.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Build a Developer Portfolio That Gets You Hired | Code Of School">
+
+    <meta name="twitter:description"
+        content="Learn how to build a professional developer portfolio with projects, GitHub, and practical skills to impress recruiters with Code Of School.">
+
     <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
     <link rel="stylesheet" href="../../header-footer.css">
-    <link rel="stylesheet" href="../style.css">
-    <link />
 
-    <style>
-        /* ==========================================================================
-           1. Global Styles & Theme Background
-           ========================================================================== */
-    </style>
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
 
-    <div class="dashboard-container" style="padding-bottom: 40px;">
+    <div class="container">
 
-        <!-- Header Section -->
-        <h1 class="blog-header">Digital Marketing Blog</h1>
+        <header>
+            <nav>
+                <div class="nav-image">
+                    <a href="/"><img src="../../img/cos-white-logo.webp" alt="Company Logo"></a>
+                </div>
 
-        <!-- Filter Tags Matrix Cloud -->
-        <div class="filter-tags-cloud">
-            <a class="tag-pill active">All Articles</a>
-            <a class="tag-pill">Digital Strategy</a>
-            <a class="tag-pill">Content Marketing</a>
-            <a class="tag-pill">Search Engine Optimization</a>
-            <a class="tag-pill">Email Marketing</a>
-            <a class="tag-pill">Social Media Marketing</a>
-            <a class="tag-pill">E-Commerce</a>
-            <a class="tag-pill">Data and Analytics</a>
-            <a class="tag-pill">Customer Experience</a>
-            <a class="tag-pill">Digital Management and Leadership</a>
-            <a class="tag-pill">Display and Video Advertising</a>
-            <a class="tag-pill">PPC and Paid Search</a>
-            <a class="tag-pill">Web Design, CRO and UX</a>
-            <a class="tag-pill">AI Digital Marketing</a>
+                <div class="nav-pg">
+
+                    <ul class="nav-page">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../../about-us.html">About Us</a></li>
+                        <li><a href="../../course.html" id="courses-link">Courses ▼</a></li>
+                        <li><a href="../../placement.html">Our Placements</a></li>
+                        <li><a href="../../contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-but">
+                    <a href="tel:+919977723584" class="call-btn">
+                        <i class="fa-solid fa-phone"></i> Enroll Now
+                    </a>
+                </div>
+
+                <div class="hamburger-menu" id="hamburger-icon">
+                    &#9776; </div>
+            </nav>
+        </header>
+
+
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="all">All</li>
+                <li data-category="web">Web Dev</li>
+                <li data-category="language">Languages</li>
+                <li data-category="app">Mobile.Dev</li>
+                <li data-category="ai">Data & AI</li>
+                <li data-category="other">Other</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
         </div>
 
-        <!-- Total Articles Tracker Meta -->
-        <div class="results-counter">Showing 1-8 of 1353 Articles</div>
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../course.html" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="../../placement.html">Our Placements</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
 
-        <!-- Dashboard Post Card Grid Framework -->
-        <div class="blog-grid">
 
-            <!-- Card 1 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80"
-                    alt="Sustainable Fashion Workflow">
-                <div class="card-overlay">
-                    <h2 class="card-title">The Future of Fashion: Sustainable Practices in the Industry</h2>
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="web">Web Dev</li>
+                <li data-category="data">Data Science</li>
+                <li data-category="design">Design</li>
+                <li data-category="marketing">Marketing</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+                <li><a href="#" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="placement.html">Our Placements</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Top Back Link & Layout Container -->
+        <div class="hero-wrapper">
+
+            <!-- Left Side: Title and Metadata -->
+            <div class="hero-left">
+                <div class="meta-info">Articles • Web Engineering • Industry Demand</div>
+                <h1>Your Resume Isn't Enough: Here's How to Build a Developer Portfolio That Gets You Hired
+                </h1>
+                <h3>If you're aiming to become a software developer, having only a resume isn't enough anymore.
+                </h3>
+                <span class="author-name">Published by Code Of School</span>
+                <span class="publish-date"
+                    style="color: #ccc; font-size: 0.85rem; display: block; margin-top: 4px;">Digital marketing and Tech
+                    Career Experts
+                </span>
+
+                <div class="author-section">
+                    <!-- Replace src with your profile image path later -->
+                    <img class="author-avatar"
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                        alt="Author Profile">
+                    <div class="author-details">
+                        <span class="author-name">by Content Expert</span>
+                        <!-- <span class="publish-date">Posted on June 26, 2026</span> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Brand Security Analysis">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is AI Slop the New Brand Risk?</h2>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Performance Max Optimization Concept">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is Performance Max Right for Your Campaign? A Practical Guide</h2>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Optimization Processing Node">
-                <div class="card-overlay">
-                    <h2 class="card-title">AI Agents vs Automation: Choose the Right Approach for Your Marketing Tasks
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=400&q=80"
-                    alt="Email Marketing Vector Matrix Layout">
-                <div class="card-overlay">
-                    <h2 class="card-title">Creating Accessible Emails: A Practical Guide for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
-                    alt="Smart Bidding Strategy Graphics">
-                <div class="card-overlay">
-                    <h2 class="card-title">Which Google Ads Smart Bidding Strategy Is Right for Your Campaign?</h2>
-                </div>
-            </div>
-
-            <!-- Card 7 (Premium Variant Card Component) -->
-            <div class="blog-card">
-                <div class="premium-badge">★ Premium</div>
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Data Analytics Metric Presentation Layer">
-                <div class="card-overlay">
-                    <h2 class="card-title">Data Visualization: Tools and Tips for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
-                    alt="Agile Marketing Professionals Framework Setup">
-                <div class="card-overlay">
-                    <h2 class="card-title">Agile Marketing Metrics That Matter: Leading vs. Lagging</h2>
-                </div>
+            <!-- Right Side: Banner /  left side image -->
+            <div class="hero-right">
+                <!-- Replace 'your-image-path.jpg' with your actual image file name -->
+                <img class="hero-img" src="../../img/fullstack-hero.png" alt="Best full stack course in Indore">
             </div>
 
         </div>
+
+        <!-- blog content section start -->
+        <section class="bp-content-section">
+
+            <!-- ============ TABLE OF CONTENTS ============ -->
+            <div class="bp-toc-wrapper">
+
+                <!-- Mobile/Tablet toggle button -->
+                <button class="bp-toc-toggle" id="bpTocToggle" aria-expanded="false">
+                    <span><i class="fas fa-list-ul"></i> Table of Contents</span>
+                    <i class="fas fa-chevron-down bp-toc-chevron"></i>
+                </button>
+
+                <!-- Sidebar TOC (sticky on desktop, collapsible on mobile) -->
+                <aside class="bp-toc-sidebar" id="bpTocSidebar">
+                    <div class="bp-toc-inner">
+                        <h4 class="bp-toc-heading"><i class="fas fa-list-ul"></i> Table of Contents</h4>
+                        <ul class="bp-toc-list" id="bpTocList">
+                            <!-- JS auto-fills this with every h2 found inside .bp-article-body -->
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+            <!-- ============ END TABLE OF CONTENTS ============ -->
+
+            <!-- ============ ARTICLE BODY (everything here gets scanned for TOC headings) ============ -->
+
+            <div class="bp-article-body">
+                <p>Employers want to see that you can create real apps, solve coding problems, and work with modern
+                    technologies. That's
+                    why having a strong developer portfolio is now one of the most important tools for students and
+                    aspiring developers.
+                </p>
+                <p>A well-designed portfolio shows your technical skills, creativity, and how you solve problems. It
+                    lets recruiters see
+                    your work before they even set up an interview, giving you a big advantage over other job
+                    candidates.</p>
+                <p>In this blog by <a href="/index.html" class="bp-article-body-link">Code Of School</a>, you'll learn
+                    how to build an impressive developer
+                    portfolio, what
+                    projects to include, common mistakes to avoid, and why taking the best full-stack development course
+                    in Indore can help you
+                    create a portfolio
+                    that stands out in today’s competitive job market.</p>
+
+                <h2>Why Every Developer Needs a Portfolio</h2>
+
+                <p>A portfolio acts as your digital identity.</p>
+                <p>Instead of just telling employers what you know, it lets you show them and prove your skills.</p>
+                <p>Recruiters often only spend a few minutes looking through applications. A portfolio helps them
+                    quickly understand
+                    your abilities through real projects and live demos.</p>
+                <p>Students in the <strong>best full-stack development
+                        course in Indore</strong>
+                    build several practical projects that become useful parts of their professional portfolios.</p>
+
+                <h3>Create Your Own Portfolio Website</h3>
+
+                <p>Your portfolio should be your first project.</p>
+                <p>A personal website shows your web development skills and gives employers an easy way to look at your
+                    work.</p>
+                <p>Your portfolio website should include:</p>
+                <ul>
+                    <li>About Me section</li>
+                    <li>Technical skills</li>
+                    <li>Featured projects</li>
+                    <li>Resume</li>
+                    <li>Contact information</li>
+                    <li>GitHub profile</li>
+                    <li>LinkedIn profile</li>
+                </ul>
+                <p>Make sure the design is clean, easy to use, and works well on all devices.</p>
+
+                <h3>Showcase Real Projects</h3>
+
+                <p>Projects are the heart of every developer portfolio.</p>
+                <p>Instead of uploading small coding exercises, add projects that solve real issues.</p>
+                <p>Some great portfolio projects include:</p>
+                <ul>
+                    <li>E-commerce website</li>
+                    <li>Student Management System</li>
+                    <li>Blog platform</li>
+                    <li>Task Management App</li>
+                    <li>Expense Tracker</li>
+                    <li>Job Portal</li>
+                    <li>Weather Application</li>
+                    <li>Online Learning Platform</li>
+                </ul>
+                <p>Students in the <a href="/course.html" class="bp-article-body-link">best full-stack development
+                        course in Indore</a>
+                    work on live projects that show both frontend and backend development skills.</p>
+
+                <h3>Upload Your Code to GitHub</h3>
+
+                <p>Recruiters don’t just look at the finished website.</p>
+                <p>Many also check the source code.</p>
+                <p>Upload every project to GitHub with:</p>
+                <ul>
+                    <li>Proper folder structure</li>
+                    <li>Clean code</li>
+                    <li>Helpful comments</li>
+                    <li>README documentation</li>
+                    <li>Installation instructions</li>
+                </ul>
+                <p>An active GitHub profile shows you're consistent and really interested in software development.</p>
+
+                <h3>Explain Every Project Clearly</h3>
+
+                <p>Don't just show screenshots.</p>
+                <p>Describe each project by explaining:</p>
+                <ul>
+                    <li>Project objective</li>
+                    <li>Technologies used</li>
+                    <li>Features developed</li>
+                    <li>Challenges faced</li>
+                    <li>Solutions implemented</li>
+                    <li>What you learned</li>
+                </ul>
+                <p>These explanations help recruiters understand your thinking and problem-solving approach.</p>
+
+                <h3>Highlight Your Technical Skills</h3>
+
+                <p>Create a section that clearly lists the technologies you know.</p>
+                <p>For example:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>MongoDB</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>REST APIs</li>
+                </ul>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development course in
+                        Indore</a> helps
+                    students become confident with these technologies through hands-on practice instead of only learning
+                    in theory.</p>
+
+                <h3>Keep Your Portfolio Updated</h3>
+
+                <p>Your portfolio should grow as you improve your skills.</p>
+                <p>Whenever you finish a new project or learn a new technology, update your portfolio.</p>
+                <p>An updated portfolio shows employers that you're always learning and improving.</p>
+                <p>It also shows you care about staying up-to-date with modern development practices.</p>
+
+                <h3>Add Live Project Links</h3>
+
+                <p>Whenever possible, deploy your projects online.</p>
+                <p>Platforms like Vercel, Netlify, and Render make it easy to host web apps.</p>
+                <p>Providing live project links lets recruiters experience your work instead of just reading about it.
+                </p>
+                <p>This creates a stronger impression during the hiring process.</p>
+
+                <h3>Include Your Resume and Contact Information</h3>
+
+                <p>Make it easy for recruiters to reach you.</p>
+                <p>Your portfolio should include:</p>
+                <ul>
+                    <li>Downloadable resume</li>
+                    <li>Email address</li>
+                    <li>Phone number</li>
+                    <li>LinkedIn profile</li>
+                    <li>GitHub profile</li>
+                </ul>
+                <p>Simple navigation helps recruiters find the information they need quickly.</p>
+
+                <h2>Common Portfolio Mistakes to Avoid</h2>
+
+                <p>Many students unknowingly weaken their portfolios by making small mistakes.</p>
+                <p>Avoid:</p>
+                <ul>
+                    <li>Broken links</li>
+                    <li>Incomplete projects</li>
+                    <li>Poor mobile responsiveness</li>
+                    <li>Spelling mistakes</li>
+                    <li>Outdated information</li>
+                    <li>Copying someone else's work</li>
+                    <li>Slow websites</li>
+                </ul>
+                <p>A polished portfolio reflects professionalism and attention to detail.</p>
+
+                <h2>Learn Portfolio Development at Code Of School</h2>
+
+                <p>Building a professional portfolio becomes much easier with expert guidance.</p>
+                <p>At <strong>Code Of School</strong>, students work on real-world projects using HTML, CSS, JavaScript,
+                    React, Node.js,
+                    Express.js, MongoDB, SQL, Git, and GitHub. They also create professional portfolios that impress
+                    recruiters.</p>
+                <p>The <strong>best full-stack development course in
+                        Indore</strong> focuses on
+                    practical learning, portfolio development, interview preparation, resume building, and live coding
+                    projects to help
+                    students find placements, internships, freelancing, and software development careers.</p>
+                <p>If you're ready to become a confident developer, visit code of school and explore the
+                    industry-focused training
+                    programs offered by <a href="/index.html" class="bp-article-body-link">Code Of School</a>.</p>
+
+                <h2>Final Thoughts</h2>
+
+                <p>A strong developer portfolio can have a bigger impact than a resume alone.</p>
+                <p>By showing real projects, writing clean code, keeping your portfolio updated, and demonstrating your
+                    skills, you
+                    greatly increase your chances of being noticed by recruiters and clients.</p>
+                <p>If you're serious about building a successful career in software development, enrolling in the <a
+                        href="/course.html" class="bp-article-body-link">best full-stack development course in
+                        Indore</a> can help you gain the practical
+                    experience, industry knowledge, and project portfolio you need to stand out in today's competitive
+                    technology
+                    industry.</p>
+                <p><em>Published by Code of School, Empowering
+                        the next generation of digital marketers and
+                        full-stack
+                        developers.</em></p>
+            </div>
+            <!-- ============ END ARTICLE BODY ============ -->
+
+        </section>
+        <!-- blog content section end -->
+        <section class="reviews-section">
+            <h2>Student Reviews</h2>
+
+            <div class="rating-summary-wrapper">
+                <div class="rating-badge-card">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-label">Course Rating</div>
+                </div>
+
+                <div class="breakdown-bars-container">
+                    <div class="bar-row">
+                        <span class="star-label">5 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="percentage-label">88%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">4 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 9%"></div>
+                        </div>
+                        <span class="percentage-label">9%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">3 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 2%"></div>
+                        </div>
+                        <span class="percentage-label">2%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">2 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 1%"></div>
+                        </div>
+                        <span class="percentage-label">1%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">1 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="percentage-label">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">PR</div>
+                            <div class="user-meta-info">
+                                <h4>Priya Rajput</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">November 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Best digital marketing course I've found. Arjun explains everything
+                            with real examples and live account walkthroughs. Got a job at a digital agency within 2
+                            months of completing this. Worth every rupee!</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 142 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">SK</div>
+                            <div class="user-meta-info">
+                                <h4>Sanjay Kumar</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">I run a small clothing business and this course completely changed
+                            how I approach online marketing. My Facebook ads are now profitable and organic traffic is
+                            up 300%. Highly practical content.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 88 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">NS</div>
+                            <div class="user-meta-info">
+                                <h4>Nisha Sharma</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">The Google Ads section alone is worth 10x the price. Arjun goes deep
+                            into negative keywords, quality scores, and bidding strategies that nobody else teaches. I'm
+                            now managing ₹15L/month in ad spend.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 78 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">RG</div>
+                            <div class="user-meta-info">
+                                <h4>Rohit Gupta</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">September 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Completed 4 other marketing courses before this one and none came
+                            close. The projects are real — you actually launch campaigns and see results. Now
+                            freelancing at ₹80K/month.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 84 people found this helpful</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
     </div>
+
+
+
     <!-- FOOTER -->
     <footer>
 
@@ -348,7 +735,21 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- <div class="footer-contact-time">
+                    <div class="footer-contact-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        </svg>
+                    </div>
+                    <div class="office">
+                        <ul>
+                            <li><b>Seoni Malwa Time : </b> Mon–Sat &nbsp; 10:00 AM – 2:00 PM </li>
+                            <li>Sunday &nbsp;&nbsp;Closed</li>
+                        </ul>
+                    </div>
+                </div> -->
                 <div class="footer-logo">
                     <a href="https://www.instagram.com/codeofschool/" target="_blank" title="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
@@ -584,10 +985,10 @@
             <h3>Copyright &#169; 2025 <a href="https://inforag.com/" target="_blank">Inforag Technology</a> All rights
                 reserved</h3>
         </div>
-
-
     </footer>
 
+    <script src="../script.js"> </script>
+    <script src="../blogs-header.js"></script>
 </body>
 
 </html>

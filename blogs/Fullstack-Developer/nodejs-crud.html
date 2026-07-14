@@ -4,136 +4,523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Blog - Dashboard</title>
-    <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
-    <link rel="stylesheet" href="../Blog-main.css">
+    <title>Connect Node.js to a Database and Do CRUD Actions</title>
+
+    <meta name="description"
+        content="Find out how to connect a Node.js app to a database and do common CRUD operations with easy-to-understand explanations for new developers.">
+
+    <meta name="keywords"
+        content="Node.js Database Setup, CRUD Examples, MongoDB, Express.js, Backend Tech, top full-stack course in Indore, Code Of School">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Code Of School">
+
+    <meta property="og:title" content="Connect Node.js to a Database and Do CRUD Actions">
+
+    <meta property="og:description"
+        content="Find out how to connect a Node.js app to a database and do common CRUD operations with easy-to-understand explanations for new developers.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Connect Node.js to a Database and Do CRUD Actions">
+
+    <meta name="twitter:description"
+        content="Find out how to connect a Node.js app to a database and do common CRUD operations with easy-to-understand explanations for new developers.">
+
     <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
     <link rel="stylesheet" href="../../header-footer.css">
-    <link rel="stylesheet" href="../style.css">
-    <link />
 
-    <style>
-        /* ==========================================================================
-           1. Global Styles & Theme Background
-           ========================================================================== */
-    </style>
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
 
-    <div class="dashboard-container" style="padding-bottom: 40px;">
+    <div class="container">
 
-        <!-- Header Section -->
-        <h1 class="blog-header">Digital Marketing Blog</h1>
+        <header>
+            <nav>
+                <div class="nav-image">
+                    <a href="/"><img src="../../img/cos-white-logo.webp" alt="Company Logo"></a>
+                </div>
 
-        <!-- Filter Tags Matrix Cloud -->
-        <div class="filter-tags-cloud">
-            <a class="tag-pill active">All Articles</a>
-            <a class="tag-pill">Digital Strategy</a>
-            <a class="tag-pill">Content Marketing</a>
-            <a class="tag-pill">Search Engine Optimization</a>
-            <a class="tag-pill">Email Marketing</a>
-            <a class="tag-pill">Social Media Marketing</a>
-            <a class="tag-pill">E-Commerce</a>
-            <a class="tag-pill">Data and Analytics</a>
-            <a class="tag-pill">Customer Experience</a>
-            <a class="tag-pill">Digital Management and Leadership</a>
-            <a class="tag-pill">Display and Video Advertising</a>
-            <a class="tag-pill">PPC and Paid Search</a>
-            <a class="tag-pill">Web Design, CRO and UX</a>
-            <a class="tag-pill">AI Digital Marketing</a>
+                <div class="nav-pg">
+
+                    <ul class="nav-page">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../../about-us.html">About Us</a></li>
+                        <li><a href="../../course.html" id="courses-link">Courses ▼</a></li>
+                        <li><a href="../../placement.html">Our Placements</a></li>
+                        <li><a href="../../contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-but">
+                    <a href="tel:+919977723584" class="call-btn">
+                        <i class="fa-solid fa-phone"></i> Enroll Now
+                    </a>
+                </div>
+
+                <div class="hamburger-menu" id="hamburger-icon">
+                    &#9776; </div>
+            </nav>
+        </header>
+
+
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="all">All</li>
+                <li data-category="web">Web Dev</li>
+                <li data-category="language">Languages</li>
+                <li data-category="app">Mobile.Dev</li>
+                <li data-category="ai">Data & AI</li>
+                <li data-category="other">Other</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
         </div>
 
-        <!-- Total Articles Tracker Meta -->
-        <div class="results-counter">Showing 1-8 of 1353 Articles</div>
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../course.html" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="../../placement.html">Our Placements</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
 
-        <!-- Dashboard Post Card Grid Framework -->
-        <div class="blog-grid">
 
-            <!-- Card 1 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80"
-                    alt="Sustainable Fashion Workflow">
-                <div class="card-overlay">
-                    <h2 class="card-title">The Future of Fashion: Sustainable Practices in the Industry</h2>
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="web">Web Dev</li>
+                <li data-category="data">Data Science</li>
+                <li data-category="design">Design</li>
+                <li data-category="marketing">Marketing</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+                <li><a href="#" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="placement.html">Our Placements</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Top Back Link & Layout Container -->
+        <div class="hero-wrapper">
+
+            <!-- Left Side: Title and Metadata -->
+            <div class="hero-left">
+                <div class="meta-info">Articles • Web Engineering • Industry Demand</div>
+                <h1>How to Connect a Node.js App to a Database and Do Basic CRUD Operations?
+                </h1>
+
+                <span class="author-name">Published by Code Of School</span>
+                <span class="publish-date"
+                    style="color: #ccc; font-size: 0.85rem; display: block; margin-top: 4px;">Digital marketing and Tech
+                    Career Experts
+                </span>
+
+                <div class="author-section">
+                    <!-- Replace src with your profile image path later -->
+                    <img class="author-avatar"
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                        alt="Author Profile">
+                    <div class="author-details">
+                        <span class="author-name">by Content Expert</span>
+                        <!-- <span class="publish-date">Posted on June 26, 2026</span> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Brand Security Analysis">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is AI Slop the New Brand Risk?</h2>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Performance Max Optimization Concept">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is Performance Max Right for Your Campaign? A Practical Guide</h2>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Optimization Processing Node">
-                <div class="card-overlay">
-                    <h2 class="card-title">AI Agents vs Automation: Choose the Right Approach for Your Marketing Tasks
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=400&q=80"
-                    alt="Email Marketing Vector Matrix Layout">
-                <div class="card-overlay">
-                    <h2 class="card-title">Creating Accessible Emails: A Practical Guide for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
-                    alt="Smart Bidding Strategy Graphics">
-                <div class="card-overlay">
-                    <h2 class="card-title">Which Google Ads Smart Bidding Strategy Is Right for Your Campaign?</h2>
-                </div>
-            </div>
-
-            <!-- Card 7 (Premium Variant Card Component) -->
-            <div class="blog-card">
-                <div class="premium-badge">★ Premium</div>
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Data Analytics Metric Presentation Layer">
-                <div class="card-overlay">
-                    <h2 class="card-title">Data Visualization: Tools and Tips for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
-                    alt="Agile Marketing Professionals Framework Setup">
-                <div class="card-overlay">
-                    <h2 class="card-title">Agile Marketing Metrics That Matter: Leading vs. Lagging</h2>
-                </div>
+            <!-- Right Side: Banner /  left side image -->
+            <div class="hero-right">
+                <!-- Replace 'your-image-path.jpg' with your actual image file name -->
+                <img class="hero-img" src="../../img/fullstack-hero.png"
+                    alt="Hands-On Project-Based Coding and Engineering Execution Patterns">
             </div>
 
         </div>
+
+        <!-- blog content section start -->
+        <section class="bp-content-section">
+
+            <!-- ============ TABLE OF CONTENTS ============ -->
+            <div class="bp-toc-wrapper">
+
+                <!-- Mobile/Tablet toggle button -->
+                <button class="bp-toc-toggle" id="bpTocToggle" aria-expanded="false">
+                    <span><i class="fas fa-list-ul"></i> Table of Contents</span>
+                    <i class="fas fa-chevron-down bp-toc-chevron"></i>
+                </button>
+
+                <!-- Sidebar TOC (sticky on desktop, collapsible on mobile) -->
+                <aside class="bp-toc-sidebar" id="bpTocSidebar">
+                    <div class="bp-toc-inner">
+                        <h4 class="bp-toc-heading"><i class="fas fa-list-ul"></i> Table of Contents</h4>
+                        <ul class="bp-toc-list" id="bpTocList">
+                            <!-- JS auto-fills this with every h2 found inside .bp-article-body -->
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+            <!-- ============ END TABLE OF CONTENTS ============ -->
+
+            <!-- ============ ARTICLE BODY (everything here gets scanned for TOC headings) ============ -->
+
+            <div class="bp-article-body">
+                <p>Creating a web app is not just about making it look nice.</p>
+                <p>Every modern app needs a database to store, organize, and manage data. Whether you're making an
+                    online store, a
+                    school management system, or a social app, you need the app to save, get, update, and remove data
+                    whenever users
+                    interact with it.</p>
+                <p>This is where Node.js and databases come in.</p>
+                <p>Knowing how to connect a Node.js app to a database and do CRUD operations is one of the most
+                    important things every
+                    upcoming backend developer should learn. Students in the best
+                    full-stack course in Indore get hands-on practice with these ideas by building actual
+                    projects.</p>
+
+                <h2>What is Node.js?</h2>
+
+                <p>Node.js is a JavaScript tool that lets developers run JavaScript code outside the browser.</p>
+                <p>Traditionally, JavaScript was for building web pages, but Node.js lets you use it for building fast
+                    and scalable
+                    backend apps.</p>
+                <p>It's used a lot for making APIs, web apps, and server systems.</p>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development institute in
+                        Indore</a> teaches
+                    students how Node.js works with databases to make complete web apps.</p>
+
+                <h2>Why Do Web Apps Need a Database?</h2>
+
+                <p>A database keeps all the important data that an app uses.</p>
+                <p>Examples include:</p>
+                <ul>
+                    <li>User accounts</li>
+                    <li>Product details</li>
+                    <li>Orders</li>
+                    <li>Messages</li>
+                    <li>Student records</li>
+                </ul>
+                <p>Without a database, an app would lose all its data every time it restarts.</p>
+                <p>Databases let apps store data permanently and get it back whenever needed.</p>
+
+                <h3>Picking a Database</h3>
+
+                <p>Node.js can work with many types of databases.</p>
+                <p>Popular ones include:</p>
+                <ul>
+                    <li>MongoDB</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>SQLite</li>
+                </ul>
+                <p>For newbies, MongoDB is one of the most common choices because it works well with JavaScript and is
+                    easy to use with
+                    Node.js.</p>
+                <p>Students in the top full-stack course in
+                    Indore often start
+                    with MongoDB before exploring other databases.</p>
+
+                <h3>Connecting Node.js to a Database</h3>
+
+                <p>Before you can do anything with a database, your app must connect to it.</p>
+                <p>The usual steps are:</p>
+                <ul>
+                    <li>Install the needed database tools</li>
+                    <li>Set up a database connection</li>
+                    <li>Check that the connection works</li>
+                    <li>Handle any connection problems</li>
+                </ul>
+                <p>Once the connection is working, the app can read and manage data smoothly.</p>
+                <p>A stable database connection is a key part of building a backend.</p>
+
+                <h2>What Are CRUD Operations?</h2>
+
+                <p>CRUD stands for the four basic actions you do with data in a database.</p>
+                <p>They are:</p>
+                <ul>
+                    <li>Create</li>
+                    <li>Read</li>
+                    <li>Update</li>
+                    <li>Delete</li>
+                </ul>
+                <p>Most web apps use these operations regularly.</p>
+                <p>Knowing CRUD helps developers make apps that let users manage information easily.</p>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development institute in
+                        Indore</a> gives
+                    students real-world experience with CRUD through project work.</p>
+
+                <h3>Create Operation</h3>
+
+                <p>Create adds new data to the database.</p>
+                <p>Examples include:</p>
+                <ul>
+                    <li>Registering a new user</li>
+                    <li>Adding a product</li>
+                    <li>Writing a blog post</li>
+                    <li>Saving customer info</li>
+                </ul>
+                <p>Whenever users add new data, the app uses the Create operation to store it.</p>
+
+                <h3>Read Operation</h3>
+
+                <p>Read gets data from the database.</p>
+                <p>Examples include:</p>
+                <ul>
+                    <li>Showing products</li>
+                    <li>Displaying blog posts</li>
+                    <li>Viewing user profiles</li>
+                    <li>Loading student info</li>
+                </ul>
+                <p>Every time a page shows stored data, the app performs a Read operation.</p>
+
+                <h3>Update Operation</h3>
+
+                <p>Update changes existing data.</p>
+                <p>Examples include:</p>
+                <ul>
+                    <li>Editing a user profile</li>
+                    <li>Changing a password</li>
+                    <li>Updating product prices</li>
+                    <li>Modifying contact details</li>
+                </ul>
+                <p>Apps use Update when users make changes to existing records.</p>
+
+                <h3>Delete Operation</h3>
+
+                <p>Delete removes data from the database.</p>
+                <p>Examples include:</p>
+                <ul>
+                    <li>Deleting a user</li>
+                    <li>Removing a product</li>
+                    <li>Deleting a blog post</li>
+                    <li>Removing old records</li>
+                </ul>
+                <p>Developers must be careful when using Delete to avoid losing important data accidentally.</p>
+
+                <h2>Best Practices for Database Work</h2>
+
+                <p>Building a professional backend involves more than just setting up a database.</p>
+                <p>Developers should also:</p>
+                <ul>
+                    <li>Check user input</li>
+                    <li>Handle database errors</li>
+                    <li>Protect sensitive data</li>
+                    <li>Improve query performance</li>
+                    <li>Set up secure login</li>
+                    <li>Make regular backups</li>
+                </ul>
+                <p>These practices help make apps secure and trustworthy.</p>
+                <p>Students in the top full-stack course in
+                    Indore learn these
+                    techniques through live projects.</p>
+
+                <h2>Why Learning CRUD Matters</h2>
+
+                <p>CRUD operations are the base of backend development.</p>
+                <p>Whether you're building:</p>
+                <ul>
+                    <li>Online shops</li>
+                    <li>Hospital systems</li>
+                    <li>Banking apps</li>
+                    <li>Learning platforms</li>
+                    <li>Business software</li>
+                </ul>
+                <p>Every app needs to handle creating, reading, updating, and deleting data.</p>
+                <p>Understanding these ideas prepares students for job interviews and real projects.</p>
+                <p>The top full-stack course in Indore helps
+                    learners gain
+                    confidence by letting them build full CRUD apps from scratch.</p>
+
+                <h2>Final Thoughts</h2>
+
+                <p>Connecting a Node.js app to a database and doing CRUD operations is one of the most valuable skills
+                    for any
+                    full-stack developer.</p>
+                <p>These concepts are used in almost all modern web apps and form the basis of backend work.</p>
+                <p>Learning how databases work, understanding CRUD, and following secure practices helps you build
+                    reliable and scalable
+                    apps.</p>
+                <p>If you want hands-on experience with Node.js, MongoDB, APIs, backend, and real projects, joining the
+                    top full-stack course in Indore can give you
+                    industry-ready
+                    skills through expert guidance and practical training.
+                </p>
+                <p>Start your full-stack Development journey with <strong>Code Of School</strong> and explore
+                    professional training
+                    programs at <a href="/index.html" class="bp-article-body-link">Code Of School</a>.</p>
+
+
+                <p><em>Published by Code of School, Empowering
+                        the next generation of digital marketers and
+                        full-stack
+                        developers.</em></p>
+            </div>
+            <!-- ============ END ARTICLE BODY ============ -->
+
+        </section>
+        <!-- blog content section end -->
+        <section class="reviews-section">
+            <h2>Student Reviews</h2>
+
+            <div class="rating-summary-wrapper">
+                <div class="rating-badge-card">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-label">Course Rating</div>
+                </div>
+
+                <div class="breakdown-bars-container">
+                    <div class="bar-row">
+                        <span class="star-label">5 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="percentage-label">88%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">4 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 9%"></div>
+                        </div>
+                        <span class="percentage-label">9%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">3 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 2%"></div>
+                        </div>
+                        <span class="percentage-label">2%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">2 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 1%"></div>
+                        </div>
+                        <span class="percentage-label">1%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">1 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="percentage-label">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">PR</div>
+                            <div class="user-meta-info">
+                                <h4>Priya Rajput</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">November 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Best digital marketing course I've found. Arjun explains everything
+                            with real examples and live account walkthroughs. Got a job at a digital agency within 2
+                            months of completing this. Worth every rupee!</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 142 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">SK</div>
+                            <div class="user-meta-info">
+                                <h4>Sanjay Kumar</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">I run a small clothing business and this course completely changed
+                            how I approach online marketing. My Facebook ads are now profitable and organic traffic is
+                            up 300%. Highly practical content.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 88 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">NS</div>
+                            <div class="user-meta-info">
+                                <h4>Nisha Sharma</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">The Google Ads section alone is worth 10x the price. Arjun goes deep
+                            into negative keywords, quality scores, and bidding strategies that nobody else teaches. I'm
+                            now managing ₹15L/month in ad spend.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 78 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">RG</div>
+                            <div class="user-meta-info">
+                                <h4>Rohit Gupta</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">September 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Completed 4 other marketing courses before this one and none came
+                            close. The projects are real — you actually launch campaigns and see results. Now
+                            freelancing at ₹80K/month.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 84 people found this helpful</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
     </div>
+
+
+
     <!-- FOOTER -->
     <footer>
 
@@ -348,7 +735,21 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- <div class="footer-contact-time">
+                    <div class="footer-contact-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        </svg>
+                    </div>
+                    <div class="office">
+                        <ul>
+                            <li><b>Seoni Malwa Time : </b> Mon–Sat &nbsp; 10:00 AM – 2:00 PM </li>
+                            <li>Sunday &nbsp;&nbsp;Closed</li>
+                        </ul>
+                    </div>
+                </div> -->
                 <div class="footer-logo">
                     <a href="https://www.instagram.com/codeofschool/" target="_blank" title="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
@@ -584,10 +985,10 @@
             <h3>Copyright &#169; 2025 <a href="https://inforag.com/" target="_blank">Inforag Technology</a> All rights
                 reserved</h3>
         </div>
-
-
     </footer>
 
+    <script src="../script.js"> </script>
+    <script src="../blogs-header.js"></script>
 </body>
 
 </html>

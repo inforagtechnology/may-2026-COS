@@ -4,136 +4,524 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Blog - Dashboard</title>
-    <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
-    <link rel="stylesheet" href="../Blog-main.css">
+    <title>E-Commerce Website Development Guide for Full Stack Developers</title>
+
+    <meta name="description"
+        content="Learn how to build e-commerce websites. Code Of School offers the best full-stack development course in Indore with real e-commerce project training.">
+
+    <meta name="keywords"
+        content="E-Commerce Website Development Guide, Best Full-Stack Development Course in Indore, E-Commerce Development India, Code Of School Indore, MERN Stack E-Commerce, Node.js E-Commerce India, React E-Commerce Development, Best Full Stack Course Indore, E-Commerce Developer Career India">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Code Of School">
+
+    <meta property="og:title" content="E-Commerce Website Development Guide for Full Stack Developers">
+
+    <meta property="og:description"
+        content="Learn how to build e-commerce websites. Code Of School offers the best full-stack development course in Indore with real e-commerce project training.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="E-Commerce Website Development Guide for Full Stack Developers">
+
+    <meta name="twitter:description"
+        content="Learn how to build e-commerce websites. Code Of School offers the best full-stack development course in Indore with real e-commerce project training.">
+
     <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
     <link rel="stylesheet" href="../../header-footer.css">
-    <link rel="stylesheet" href="../style.css">
-    <link />
 
-    <style>
-        /* ==========================================================================
-           1. Global Styles & Theme Background
-           ========================================================================== */
-    </style>
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
 
-    <div class="dashboard-container" style="padding-bottom: 40px;">
+    <div class="container">
 
-        <!-- Header Section -->
-        <h1 class="blog-header">Digital Marketing Blog</h1>
+        <header>
+            <nav>
+                <div class="nav-image">
+                    <a href="/"><img src="../../img/cos-white-logo.webp" alt="Company Logo"></a>
+                </div>
 
-        <!-- Filter Tags Matrix Cloud -->
-        <div class="filter-tags-cloud">
-            <a class="tag-pill active">All Articles</a>
-            <a class="tag-pill">Digital Strategy</a>
-            <a class="tag-pill">Content Marketing</a>
-            <a class="tag-pill">Search Engine Optimization</a>
-            <a class="tag-pill">Email Marketing</a>
-            <a class="tag-pill">Social Media Marketing</a>
-            <a class="tag-pill">E-Commerce</a>
-            <a class="tag-pill">Data and Analytics</a>
-            <a class="tag-pill">Customer Experience</a>
-            <a class="tag-pill">Digital Management and Leadership</a>
-            <a class="tag-pill">Display and Video Advertising</a>
-            <a class="tag-pill">PPC and Paid Search</a>
-            <a class="tag-pill">Web Design, CRO and UX</a>
-            <a class="tag-pill">AI Digital Marketing</a>
+                <div class="nav-pg">
+
+                    <ul class="nav-page">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../../about-us.html">About Us</a></li>
+                        <li><a href="../../course.html" id="courses-link">Courses ▼</a></li>
+                        <li><a href="../../placement.html">Our Placements</a></li>
+                        <li><a href="../../contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-but">
+                    <a href="tel:+919977723584" class="call-btn">
+                        <i class="fa-solid fa-phone"></i> Enroll Now
+                    </a>
+                </div>
+
+                <div class="hamburger-menu" id="hamburger-icon">
+                    &#9776; </div>
+            </nav>
+        </header>
+
+
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="all">All</li>
+                <li data-category="web">Web Dev</li>
+                <li data-category="language">Languages</li>
+                <li data-category="app">Mobile.Dev</li>
+                <li data-category="ai">Data & AI</li>
+                <li data-category="other">Other</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
         </div>
 
-        <!-- Total Articles Tracker Meta -->
-        <div class="results-counter">Showing 1-8 of 1353 Articles</div>
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../course.html" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="../../placement.html">Our Placements</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
 
-        <!-- Dashboard Post Card Grid Framework -->
-        <div class="blog-grid">
 
-            <!-- Card 1 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80"
-                    alt="Sustainable Fashion Workflow">
-                <div class="card-overlay">
-                    <h2 class="card-title">The Future of Fashion: Sustainable Practices in the Industry</h2>
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="web">Web Dev</li>
+                <li data-category="data">Data Science</li>
+                <li data-category="design">Design</li>
+                <li data-category="marketing">Marketing</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+                <li><a href="#" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="placement.html">Our Placements</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Top Back Link & Layout Container -->
+        <div class="hero-wrapper">
+
+            <!-- Left Side: Title and Metadata -->
+            <div class="hero-left">
+                <div class="meta-info">Articles • Web Engineering • Industry Demand</div>
+                <h1>The Complete Guide to Building an E-Commerce Website That Actually Sells
+
+                </h1>
+
+                <span class="author-name">Published by Code Of School</span>
+                <span class="publish-date"
+                    style="color: #ccc; font-size: 0.85rem; display: block; margin-top: 4px;">Digital marketing and Tech
+                    Career Experts
+                </span>
+
+                <div class="author-section">
+                    <!-- Replace src with your profile image path later -->
+                    <img class="author-avatar"
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                        alt="Author Profile">
+                    <div class="author-details">
+                        <span class="author-name">by Content Expert</span>
+                        <!-- <span class="publish-date">Posted on June 26, 2026</span> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Brand Security Analysis">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is AI Slop the New Brand Risk?</h2>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Performance Max Optimization Concept">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is Performance Max Right for Your Campaign? A Practical Guide</h2>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Optimization Processing Node">
-                <div class="card-overlay">
-                    <h2 class="card-title">AI Agents vs Automation: Choose the Right Approach for Your Marketing Tasks
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=400&q=80"
-                    alt="Email Marketing Vector Matrix Layout">
-                <div class="card-overlay">
-                    <h2 class="card-title">Creating Accessible Emails: A Practical Guide for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
-                    alt="Smart Bidding Strategy Graphics">
-                <div class="card-overlay">
-                    <h2 class="card-title">Which Google Ads Smart Bidding Strategy Is Right for Your Campaign?</h2>
-                </div>
-            </div>
-
-            <!-- Card 7 (Premium Variant Card Component) -->
-            <div class="blog-card">
-                <div class="premium-badge">★ Premium</div>
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Data Analytics Metric Presentation Layer">
-                <div class="card-overlay">
-                    <h2 class="card-title">Data Visualization: Tools and Tips for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
-                    alt="Agile Marketing Professionals Framework Setup">
-                <div class="card-overlay">
-                    <h2 class="card-title">Agile Marketing Metrics That Matter: Leading vs. Lagging</h2>
-                </div>
+            <!-- Right Side: Banner /  left side image -->
+            <div class="hero-right">
+                <!-- Replace 'your-image-path.jpg' with your actual image file name -->
+                <img class="hero-img" src="../../img/fullstack-hero.png" alt="Best full stack course in Indore">
             </div>
 
         </div>
+
+        <!-- blog content section start -->
+        <section class="bp-content-section">
+
+            <!-- ============ TABLE OF CONTENTS ============ -->
+            <div class="bp-toc-wrapper">
+
+                <!-- Mobile/Tablet toggle button -->
+                <button class="bp-toc-toggle" id="bpTocToggle" aria-expanded="false">
+                    <span><i class="fas fa-list-ul"></i> Table of Contents</span>
+                    <i class="fas fa-chevron-down bp-toc-chevron"></i>
+                </button>
+
+                <!-- Sidebar TOC (sticky on desktop, collapsible on mobile) -->
+                <aside class="bp-toc-sidebar" id="bpTocSidebar">
+                    <div class="bp-toc-inner">
+                        <h4 class="bp-toc-heading"><i class="fas fa-list-ul"></i> Table of Contents</h4>
+                        <ul class="bp-toc-list" id="bpTocList">
+                            <!-- JS auto-fills this with every h2 found inside .bp-article-body -->
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+            <!-- ============ END TABLE OF CONTENTS ============ -->
+
+            <!-- ============ ARTICLE BODY (everything here gets scanned for TOC headings) ============ -->
+
+            <div class="bp-article-body">
+                <p>Most people who start an e-commerce business realize too late that there's a big difference between
+                    just setting up a
+                    store on a platform like Shopify or WooCommerce and building a custom e-commerce site that's
+                    tailored to their
+                    needs, can grow with their business, and stands out from others using the same templates.</p>
+                <p>For developers, the ability to create custom e-commerce solutions is one of the most valuable skills.
+                </p>
+                <p>Every business that sells something wants to sell it online.</p>
+                <p>Many require solutions that go beyond what standard platforms can provide.</p>
+                <p>And developers who can build these solutions are often high in demand and well paid.</p>
+                <p>This guide is for developers who want to understand what it really takes to build a real e-commerce
+                    website.</p>
+                <p>Not the simple version shown in tutorials, but the full picture.</p>
+                <p>At <strong>Code Of School</strong>, e-commerce development is part of our curriculum because the <a
+                        href="/course.html" class="bp-article-body-link">best full-stack development course in
+                        Indore</a> prepares
+                    students for the real development projects they'll face in their careers.</p>
+                <p>And e-commerce is one of the most common and technically challenging types of project.</p>
+
+                <h2>Understanding What an E-Commerce Website Actually Needs</h2>
+
+                <p>Before writing any code, every e-commerce project needs a clear understanding of what the system must
+                    do.</p>
+                <p>E-commerce isn't just a product listing page with a cart.</p>
+                <p>It's a complete business system that handles several key functions at once.</p>
+                <p>It includes:</p>
+                <p>A product catalog that stores and displays products with details like images, prices, inventory
+                    status, and product
+                    variations.</p>
+                <p>A user authentication system for customers to create accounts, log in, and manage their orders.</p>
+                <p>A shopping cart that works across sessions so customers don’t lose their selections.</p>
+                <p>A checkout process that collects shipping information, calculates totals, and guides the customer
+                    through buying.</p>
+                <p>A payment integration that securely processes transactions through a payment gateway.</p>
+                <p>An order management system that tracks every order from when it's placed to when it's fulfilled.</p>
+                <p>An admin interface that lets the business owner manage products, orders, and customers.</p>
+                <p>Each of these is its own complex task.</p>
+                <p>Together, they form the complete system that allows e-commerce to function properly.</p>
+
+                <h2>The Technology Choices That Shape Everything</h2>
+
+                <p>The technology stack you choose for an e-commerce project determines what is easy, what is difficult,
+                    and what is
+                    possible as the project grows.</p>
+                <p>For custom full stack e-commerce development, the MERN stack is a strong and increasingly common
+                    choice.</p>
+                <p>React on the front end handles the product browsing experience, the cart, and the checkout flow with
+                    a dynamic,
+                    fast-rendering interface that users have come to expect.</p>
+                <p>Node.js and Express on the back end manage the API layer that connects the front end to the database
+                    and to external
+                    services.</p>
+                <p>MongoDB offers the flexible document-based data storage that works well with e-commerce product
+                    catalogues where
+                    different product types can have different attributes.</p>
+                <p>Payment gateway integration is a unique challenge in every e-commerce project.</p>
+                <p>In India, Razorpay and PayU are the most commonly used payment gateways for domestic e-commerce.</p>
+                <p>Stripe is the standard option for international transactions.</p>
+                <p>Each provides SDKs and APIs that handle the secure transfer of payment information without the
+                    merchant ever handling
+                    sensitive card data directly.</p>
+
+                <h2>The Front End Experience That Converts Visitors Into Buyers</h2>
+
+                <p>E-commerce front end development is not just about making a visually appealing store.</p>
+                <p>It's about creating an experience that removes friction between a visitor discovering a product and
+                    making a
+                    purchase.</p>
+                <p>Product listing pages need to load quickly and be easy to filter.</p>
+                <p>The time it takes for products to appear when a customer first lands on a category page directly
+                    affects how many of
+                    them stay to browse.</p>
+                <p>Image optimization, lazy loading, and efficient API queries are all decisions that influence this
+                    first impression.
+                </p>
+                <p>Product detail pages need to build trust.</p>
+                <p>Clear images from multiple angles, detailed descriptions, visible stock availability, and customer
+                    reviews
+                    prominently placed all contribute to the decision to add to the cart instead of leaving the page.
+                </p>
+                <p>The cart and checkout experience need to be smooth.</p>
+                <p>Every extra step in a checkout flow is an opportunity for a customer to abandon their purchase.</p>
+                <p>Options like guest checkout, auto-filled address fields, and clear payment status feedback all help
+                    reduce the
+                    abandonment rate that costs e-commerce businesses significant revenue.</p>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development course in
+                        Indore</a> teaches
+                    these conversion-focused front end decisions as part of e-commerce project work because building
+                    something that
+                    looks like a store is different from building something that effectively sells.</p>
+
+                <h2>The Back End Architecture That Keeps Everything Running</h2>
+
+                <p>The back end of an e-commerce application needs to handle several distinct categories of logic
+                    reliably and securely.
+                </p>
+                <p>Product management API endpoints handle the creation, reading, updating, and deletion of products.
+                </p>
+                <p>They need to support:</p>
+                <p>Filtering by category, price range, and attributes.</p>
+                <p>Pagination for large catalogues.</p>
+                <p>Sorting by relevance, price, and newness.</p>
+                <p>These endpoints will be called frequently by every user browsing the store.</p>
+                <p>Cart and session management needs to persist cart contents across sessions so someone who adds items
+                    on their mobile
+                    can finish their purchase on their desktop later.</p>
+                <p>This can be done using database-stored cart sessions associated with authenticated user accounts or
+                    with anonymous
+                    session tokens for guest shoppers.</p>
+                <p>Order processing is the most important back end function.</p>
+                <p>When a customer completes checkout, the order processing logic needs to:</p>
+                <p>Validate stock availability.</p>
+                <p>Calculate accurate totals including taxes and shipping.</p>
+                <p>Start the payment gateway transaction.</p>
+                <p>Create the order record in the database only when payment is confirmed.</p>
+                <p>Race conditions where two customers could buy the last item in stock at the same time are a real
+                    challenge that needs
+                    careful handling.</p>
+
+                <h2>Security Considerations That Cannot Be Skipped</h2>
+
+                <p>E-commerce applications handle sensitive customer data and payment transactions, making security not
+                    just optional
+                    but essential.</p>
+                <h3>HTTPS is a must.</h3>
+                <p>Every e-commerce site must serve all pages over HTTPS to encrypt data between the browser and the
+                    server.</p>
+                <p>Most hosting providers now make SSL certificate installation straightforward and free through
+                    services like Let's
+                    Encrypt.</p>
+                <p><strong>SQL injection and NoSQL injection prevention </strong> require validating and sanitizing all
+                    user input before
+                    using it in
+                    database queries.</p>
+                <p>Libraries like express-validator make this systematic and reliable.</p>
+                <p><strong>Password hashing using bcrypt</strong> ensures that customer passwords are never stored in
+                    plain text.</p>
+                <p>If the database is ever compromised, hashed passwords cannot be used directly by attackers.</p>
+                <p><strong>PCI compliance for payment processing</strong> is handled by using reputable payment gateways
+                    that manage card
+                    data on their
+                    secure infrastructure rather than through your application.</p>
+                <p>Never store card numbers, CVVs, or full payment details in your own database.</p>
+
+                <h2>Performance Optimisation for E-Commerce Scale</h2>
+
+                <p>A slow e-commerce site loses customers.</p>
+                <p>Research consistently shows that page load time directly affects conversion rates, with each
+                    additional second of
+                    load time reducing conversions significantly.</p>
+                <p>Image optimization is the biggest factor for most e-commerce sites.</p>
+                <p>Product images are usually the largest assets on a product page and compressing them without losing
+                    quality through
+                    tools like Sharp in Node.js can significantly reduce page size.</p>
+                <p>Database query optimization becomes critical as product catalogues and order volumes grow.</p>
+                <p>Proper indexes on frequently queried fields, pagination that limits result sizes, and caching
+                    expensive queries using
+                    Redis all help maintain performance as data volumes increase.</p>
+
+                <h2>How Code Of School Prepares Developers for E-Commerce Projects</h2>
+
+                <p>At <strong>Code Of School</strong>, e-commerce development isn't taught as a separate advanced topic.
+                </p>
+                <p>It's the natural outcome of teaching full stack development with real-world applications in mind.</p>
+                <p>Students who complete the <a href="/course.html" class="bp-article-body-link">best full-stack
+                        development course in
+                        Indore</a> have built complete web applications with user authentication, data management, and
+                    API integration.
+                </p>
+                <p>The additional domain-specific knowledge of e-commerce requirements builds naturally on this
+                    foundation.</p>
+                <p>Our practical training approach means that students who want to specialize in e-commerce development
+                    work on real
+                    e-commerce projects during their training, building a portfolio that demonstrates this capability to
+                    potential
+                    employers and clients.</p>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development course in
+                        Indore</a> at
+                    <strong>Code Of School</strong> produces developers who can take an e-commerce brief and deliver a
+                    complete,
+                    functional, secure solution.
+                </p>
+                <p>This capability is in high demand and consistently well paid.</p>
+                <p>If you want to build the technical skills that make complex e-commerce projects achievable, come and
+                    develop them
+                    with us.</p>
+                <p><em>Published by Code of School, Empowering
+                        the next generation of digital marketers and
+                        full-stack
+                        developers.</em></p>
+            </div>
+            <!-- ============ END ARTICLE BODY ============ -->
+
+        </section>
+        <!-- blog content section end -->
+        <section class="reviews-section">
+            <h2>Student Reviews</h2>
+
+            <div class="rating-summary-wrapper">
+                <div class="rating-badge-card">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-label">Course Rating</div>
+                </div>
+
+                <div class="breakdown-bars-container">
+                    <div class="bar-row">
+                        <span class="star-label">5 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="percentage-label">88%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">4 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 9%"></div>
+                        </div>
+                        <span class="percentage-label">9%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">3 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 2%"></div>
+                        </div>
+                        <span class="percentage-label">2%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">2 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 1%"></div>
+                        </div>
+                        <span class="percentage-label">1%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">1 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="percentage-label">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">PR</div>
+                            <div class="user-meta-info">
+                                <h4>Priya Rajput</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">November 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Best digital marketing course I've found. Arjun explains everything
+                            with real examples and live account walkthroughs. Got a job at a digital agency within 2
+                            months of completing this. Worth every rupee!</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 142 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">SK</div>
+                            <div class="user-meta-info">
+                                <h4>Sanjay Kumar</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">I run a small clothing business and this course completely changed
+                            how I approach online marketing. My Facebook ads are now profitable and organic traffic is
+                            up 300%. Highly practical content.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 88 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">NS</div>
+                            <div class="user-meta-info">
+                                <h4>Nisha Sharma</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">The Google Ads section alone is worth 10x the price. Arjun goes deep
+                            into negative keywords, quality scores, and bidding strategies that nobody else teaches. I'm
+                            now managing ₹15L/month in ad spend.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 78 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">RG</div>
+                            <div class="user-meta-info">
+                                <h4>Rohit Gupta</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">September 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Completed 4 other marketing courses before this one and none came
+                            close. The projects are real — you actually launch campaigns and see results. Now
+                            freelancing at ₹80K/month.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 84 people found this helpful</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
     </div>
+
+
+
     <!-- FOOTER -->
     <footer>
 
@@ -348,7 +736,21 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- <div class="footer-contact-time">
+                    <div class="footer-contact-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        </svg>
+                    </div>
+                    <div class="office">
+                        <ul>
+                            <li><b>Seoni Malwa Time : </b> Mon–Sat &nbsp; 10:00 AM – 2:00 PM </li>
+                            <li>Sunday &nbsp;&nbsp;Closed</li>
+                        </ul>
+                    </div>
+                </div> -->
                 <div class="footer-logo">
                     <a href="https://www.instagram.com/codeofschool/" target="_blank" title="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
@@ -584,10 +986,10 @@
             <h3>Copyright &#169; 2025 <a href="https://inforag.com/" target="_blank">Inforag Technology</a> All rights
                 reserved</h3>
         </div>
-
-
     </footer>
 
+    <script src="../script.js"> </script>
+    <script src="../blogs-header.js"></script>
 </body>
 
 </html>

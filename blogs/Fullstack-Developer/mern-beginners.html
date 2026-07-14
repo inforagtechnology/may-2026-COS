@@ -4,136 +4,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Blog - Dashboard</title>
-    <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
-    <link rel="stylesheet" href="../Blog-main.css">
+    <title>What is a Stack?MERN vs MEAN Explained for Beginners</title>
+
+    <meta name="description"
+        content="Learn what a stack is in web development, understand MERN vs MEAN, and discover which stack is right for your developer career with Code Of School.">
+
+    <meta name="keywords"
+        content="What is a Stack, MERN Stack, MEAN Stack, Full Stack Development, MERN vs MEAN, Best Full Stack Course, Web Development Course">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Code Of School">
+
+    <meta property="og:title" content="What is a Stack?MERN vs MEAN Explained for Beginners">
+
+    <meta property="og:description"
+        content="Learn what a stack is in web development, understand MERN vs MEAN, and discover which stack is right for your developer career with Code Of School.">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What is a Stack?MERN vs MEAN Explained for Beginners">
+
+    <meta name="twitter:description"
+        content="Learn what a stack is in web development, understand MERN vs MEAN, and discover which stack is right for your developer career with Code Of School.">
+
     <link rel="icon" href="../../img/cos-white-logo2.png" type="image/webp" />
     <link rel="stylesheet" href="../../header-footer.css">
-    <link rel="stylesheet" href="../style.css">
-    <link />
 
-    <style>
-        /* ==========================================================================
-           1. Global Styles & Theme Background
-           ========================================================================== */
-    </style>
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
 
-    <div class="dashboard-container" style="padding-bottom: 40px;">
+    <div class="container">
 
-        <!-- Header Section -->
-        <h1 class="blog-header">Digital Marketing Blog</h1>
+        <header>
+            <nav>
+                <div class="nav-image">
+                    <a href="/"><img src="../../img/cos-white-logo.webp" alt="Company Logo"></a>
+                </div>
 
-        <!-- Filter Tags Matrix Cloud -->
-        <div class="filter-tags-cloud">
-            <a class="tag-pill active">All Articles</a>
-            <a class="tag-pill">Digital Strategy</a>
-            <a class="tag-pill">Content Marketing</a>
-            <a class="tag-pill">Search Engine Optimization</a>
-            <a class="tag-pill">Email Marketing</a>
-            <a class="tag-pill">Social Media Marketing</a>
-            <a class="tag-pill">E-Commerce</a>
-            <a class="tag-pill">Data and Analytics</a>
-            <a class="tag-pill">Customer Experience</a>
-            <a class="tag-pill">Digital Management and Leadership</a>
-            <a class="tag-pill">Display and Video Advertising</a>
-            <a class="tag-pill">PPC and Paid Search</a>
-            <a class="tag-pill">Web Design, CRO and UX</a>
-            <a class="tag-pill">AI Digital Marketing</a>
+                <div class="nav-pg">
+
+                    <ul class="nav-page">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="../../about-us.html">About Us</a></li>
+                        <li><a href="../../course.html" id="courses-link">Courses ▼</a></li>
+                        <li><a href="../../placement.html">Our Placements</a></li>
+                        <li><a href="../../contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-but">
+                    <a href="tel:+919977723584" class="call-btn">
+                        <i class="fa-solid fa-phone"></i> Enroll Now
+                    </a>
+                </div>
+
+                <div class="hamburger-menu" id="hamburger-icon">
+                    &#9776; </div>
+            </nav>
+        </header>
+
+
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="all">All</li>
+                <li data-category="web">Web Dev</li>
+                <li data-category="language">Languages</li>
+                <li data-category="app">Mobile.Dev</li>
+                <li data-category="ai">Data & AI</li>
+                <li data-category="other">Other</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
         </div>
 
-        <!-- Total Articles Tracker Meta -->
-        <div class="results-counter">Showing 1-8 of 1353 Articles</div>
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../course.html" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="../../placement.html">Our Placements</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
 
-        <!-- Dashboard Post Card Grid Framework -->
-        <div class="blog-grid">
 
-            <!-- Card 1 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80"
-                    alt="Sustainable Fashion Workflow">
-                <div class="card-overlay">
-                    <h2 class="card-title">The Future of Fashion: Sustainable Practices in the Industry</h2>
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="web">Web Dev</li>
+                <li data-category="data">Data Science</li>
+                <li data-category="design">Design</li>
+                <li data-category="marketing">Marketing</li>
+            </ul>
+            <ul class="courses" id="course-list">
+            </ul>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../about-us.html">About Us</a></li>
+                <li><a href="../../contact-us.html">Contact Us</a></li>
+                <li><a href="#" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="placement.html">Our Placements</a></li>
+            </ul>
+            <div class="mobile-nav-button">
+                <a href="tel:+919977723584" class="call-btn">
+                    <i class="fa-solid fa-phone"></i> Enroll Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Top Back Link & Layout Container -->
+        <div class="hero-wrapper">
+
+            <!-- Left Side: Title and Metadata -->
+            <div class="hero-left">
+                <div class="meta-info">Articles • Web Engineering • Industry Demand</div>
+                <h1>What is a Stack? Understanding MERN vs MEAN for Beginners
+                </h1>
+
+                <span class="author-name">Published by Code Of School</span>
+                <span class="publish-date"
+                    style="color: #ccc; font-size: 0.85rem; display: block; margin-top: 4px;">Digital marketing and Tech
+                    Career Experts
+                </span>
+
+                <div class="author-section">
+                    <!-- Replace src with your profile image path later -->
+                    <img class="author-avatar"
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                        alt="Author Profile">
+                    <div class="author-details">
+                        <span class="author-name">by Content Expert</span>
+                        <!-- <span class="publish-date">Posted on June 26, 2026</span> -->
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Brand Security Analysis">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is AI Slop the New Brand Risk?</h2>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Performance Max Optimization Concept">
-                <div class="card-overlay">
-                    <h2 class="card-title">Is Performance Max Right for Your Campaign? A Practical Guide</h2>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=400&q=80"
-                    alt="AI Optimization Processing Node">
-                <div class="card-overlay">
-                    <h2 class="card-title">AI Agents vs Automation: Choose the Right Approach for Your Marketing Tasks
-                    </h2>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=400&q=80"
-                    alt="Email Marketing Vector Matrix Layout">
-                <div class="card-overlay">
-                    <h2 class="card-title">Creating Accessible Emails: A Practical Guide for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
-                    alt="Smart Bidding Strategy Graphics">
-                <div class="card-overlay">
-                    <h2 class="card-title">Which Google Ads Smart Bidding Strategy Is Right for Your Campaign?</h2>
-                </div>
-            </div>
-
-            <!-- Card 7 (Premium Variant Card Component) -->
-            <div class="blog-card">
-                <div class="premium-badge">★ Premium</div>
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
-                    alt="Data Analytics Metric Presentation Layer">
-                <div class="card-overlay">
-                    <h2 class="card-title">Data Visualization: Tools and Tips for Marketers</h2>
-                </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="blog-card">
-                <img class="card-thumbnail"
-                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=400&q=80"
-                    alt="Agile Marketing Professionals Framework Setup">
-                <div class="card-overlay">
-                    <h2 class="card-title">Agile Marketing Metrics That Matter: Leading vs. Lagging</h2>
-                </div>
+            <!-- Right Side: Banner /  left side image -->
+            <div class="hero-right">
+                <!-- Replace 'your-image-path.jpg' with your actual image file name -->
+                <img class="hero-img" src="../../img/fullstack-hero.png" alt="Best full stack course in Indore">
             </div>
 
         </div>
+
+        <!-- blog content section start -->
+        <section class="bp-content-section">
+
+            <!-- ============ TABLE OF CONTENTS ============ -->
+            <div class="bp-toc-wrapper">
+
+                <!-- Mobile/Tablet toggle button -->
+                <button class="bp-toc-toggle" id="bpTocToggle" aria-expanded="false">
+                    <span><i class="fas fa-list-ul"></i> Table of Contents</span>
+                    <i class="fas fa-chevron-down bp-toc-chevron"></i>
+                </button>
+
+                <!-- Sidebar TOC (sticky on desktop, collapsible on mobile) -->
+                <aside class="bp-toc-sidebar" id="bpTocSidebar">
+                    <div class="bp-toc-inner">
+                        <h4 class="bp-toc-heading"><i class="fas fa-list-ul"></i> Table of Contents</h4>
+                        <ul class="bp-toc-list" id="bpTocList">
+                            <!-- JS auto-fills this with every h2 found inside .bp-article-body -->
+                        </ul>
+                    </div>
+                </aside>
+
+            </div>
+            <!-- ============ END TABLE OF CONTENTS ============ -->
+
+            <!-- ============ ARTICLE BODY (everything here gets scanned for TOC headings) ============ -->
+
+            <div class="bp-article-body">
+                <p>If you're looking to become a web developer, you've probably heard terms like MERN Stack and MEAN
+                    Stack.</p>
+                <p>These names might seem confusing at first, especially if you're just starting your coding journey.
+                    Many new learners
+                    wonder what a "stack" really means and why companies mention it in job listings.</p>
+                <p>In simple terms, a stack is a group of technologies used together to create full web applications.
+                </p>
+                <p>Instead of learning programming languages one by one, developers learn a stack because all the tools
+                    work together to
+                    build websites and apps more efficiently.</p>
+                <p>Understanding different technology stacks is a key step for anyone interested in becoming a web
+                    developer.</p>
+                <p>Students in the <a href="/course.html" class="bp-article-body-link">best full-stack development
+                        institute in
+                        Indore</a> often start by learning what a stack is before moving on to real-world projects.</p>
+
+                <h3>What Does a Stack Mean?</h3>
+
+                <p>A technology stack is a collection of programming languages, frameworks, databases, and tools that
+                    developers use to
+                    build an app.</p>
+                <p>A complete stack usually includes:</p>
+                <ul>
+                    <li>Technologies that users see and interact with (frontend)</li>
+                    <li>Tools that process data and handle logic (backend)</li>
+                    <li>A system to store information (database)</li>
+                    <li>A server that connects everything together</li>
+                </ul>
+                <p>When all these parts work together, developers can create complete web applications from scratch.</p>
+
+                <h3>What is the MERN Stack?</h3>
+
+                <p>MERN is one of the most commonly used technology stacks in modern web development.</p>
+                <p>MERN stands for:</p>
+                <ul>
+                    <li>MongoDB (database)</li>
+                    <li>Express.js (backend framework)</li>
+                    <li>React.js (frontend library)</li>
+                    <li>Node.js (runtime environment)</li>
+                </ul>
+                <p>One of the main benefits of MERN is that it uses JavaScript for everything.</p>
+                <p>Developers can write both frontend and backend code in the same language, making it easier and faster
+                    to build and
+                    manage applications.</p>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development institute in
+                        Indore</a> often
+                    covers MERN because it is widely used by startups and software companies.</p>
+
+                <h3>What is the MEAN Stack?</h3>
+
+                <p>MEAN is another popular full-stack development stack.</p>
+                <p>MEAN stands for:</p>
+                <ul>
+                    <li>MongoDB (database)</li>
+                    <li>Express.js (backend framework)</li>
+                    <li>Angular (frontend framework)</li>
+                    <li>Node.js (runtime environment)</li>
+                </ul>
+                <p>The main difference between MERN and MEAN is the frontend tool.</p>
+                <p>MERN uses React.js, while MEAN uses Angular.</p>
+                <p>Angular is a complete frontend framework that provides many built-in features, making it suitable for
+                    large-scale
+                    enterprise applications.</p>
+
+                <h3>MERN vs MEAN, What's the Difference?</h3>
+
+                <p>Both stacks use MongoDB, Express.js, and Node.js, but the frontend tools make them different.</p>
+                <p>Some key differences include:</p>
+                <ul>
+                    <li>MERN uses React.js, MEAN uses Angular.</li>
+                    <li>React is more flexible for building user interfaces.</li>
+                    <li>Angular offers a structured framework with many built-in features.</li>
+                    <li>MERN is often preferred for fast, interactive web apps.</li>
+                    <li>MEAN is more common for enterprise-level apps with a structured design.</li>
+                </ul>
+                <p>Both stacks are great options, and the choice depends on your career goals and the type of projects
+                    you work on.</p>
+                <p>Students in the <a href="/course.html" class="bp-article-body-link">best full-stack development
+                        institute in
+                        Indore</a> get hands-on experience with modern development tools, helping them understand where
+                    each stack is
+                    best used.</p>
+
+                <h2>Which Stack Should Beginners Learn?</h2>
+
+                <p>For beginners, MERN is often considered easier to learn because React has a simpler learning curve
+                    compared to
+                    Angular.</p>
+                <p>Many companies actively look for developers who know MERN because React is widely used in modern web
+                    development.</p>
+                <p>However, learning either stack helps you understand the entire development process and prepares you
+                    for a software
+                    development career.</p>
+                <p>The <a href="/course.html" class="bp-article-body-link">best full-stack development institute in
+                        Indore</a> focuses
+                    on practical implementation rather than just theory, helping students build confidence while working
+                    on real
+                    projects.</p>
+
+                <h2>Why Learning a Stack is Important</h2>
+
+                <p>Learning a full stack gives you a complete understanding of how websites and apps are built.</p>
+                <p>Instead of relying on multiple specialists, full-stack developers can handle all parts of the
+                    development process,
+                    including:</p>
+                <ul>
+                    <li>Designing user interfaces</li>
+                    <li>Building backend systems</li>
+                    <li>Managing databases</li>
+                    <li>Creating APIs</li>
+                    <li>Deploying applications</li>
+                </ul>
+                <p>These skills make full-stack developers valuable in startups, IT companies, and software
+                    organizations.</p>
+
+                <h2>Career Opportunities After Learning MERN or MEAN</h2>
+
+                <p>Once you become comfortable with a stack, you can apply for several development roles, including:</p>
+                <ul>
+                    <li>Full Stack Developer</li>
+                    <li>Frontend Developer</li>
+                    <li>Backend Developer</li>
+                    <li>Software Developer</li>
+                    <li>Web Application Developer</li>
+                    <li>JavaScript Developer</li>
+                </ul>
+                <p>Companies value developers with practical knowledge and project experience.</p>
+                <p>The best full-stack development institute in
+                    Indore helps
+                    students develop these skills through live projects, coding practice, and career-focused training.
+                </p>
+
+                <h2>Final Thoughts</h2>
+
+                <p>Choosing between MERN and MEAN isn't about picking the "better" stack.</p>
+                <p>Both are powerful technologies that help developers create modern web applications.</p>
+                <p>The most important step is understanding the basics, practicing regularly, and building real
+                    projects.</p>
+                <p>Once you gain experience, learning additional tools becomes much easier.</p>
+                <p>If you want to build a successful career in web development, enrolling in the best full-stack
+                    development institute in Indore can give you
+                    the practical
+                    knowledge, mentorship, and hands-on experience needed to become an industry-ready developer.</p>
+                <p>To learn more about full-stack development training and career opportunities, visit <a
+                        href="/index.html" class="bp-article-body-link">Code Of
+                        School</a>.
+                </p>
+
+                <p><em>Published by Code of School, Empowering
+                        the next generation of digital marketers and
+                        full-stack
+                        developers.</em></p>
+            </div>
+            <!-- ============ END ARTICLE BODY ============ -->
+
+        </section>
+        <!-- blog content section end -->
+        <section class="reviews-section">
+            <h2>Student Reviews</h2>
+
+            <div class="rating-summary-wrapper">
+                <div class="rating-badge-card">
+                    <div class="rating-score">4.9</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-label">Course Rating</div>
+                </div>
+
+                <div class="breakdown-bars-container">
+                    <div class="bar-row">
+                        <span class="star-label">5 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 88%"></div>
+                        </div>
+                        <span class="percentage-label">88%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">4 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 9%"></div>
+                        </div>
+                        <span class="percentage-label">9%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">3 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 2%"></div>
+                        </div>
+                        <span class="percentage-label">2%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">2 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 1%"></div>
+                        </div>
+                        <span class="percentage-label">1%</span>
+                    </div>
+                    <div class="bar-row">
+                        <span class="star-label">1 ★</span>
+                        <div class="bar-track">
+                            <div class="bar-fill" style="width: 0%"></div>
+                        </div>
+                        <span class="percentage-label">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">PR</div>
+                            <div class="user-meta-info">
+                                <h4>Priya Rajput</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">November 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Best digital marketing course I've found. Arjun explains everything
+                            with real examples and live account walkthroughs. Got a job at a digital agency within 2
+                            months of completing this. Worth every rupee!</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 142 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">SK</div>
+                            <div class="user-meta-info">
+                                <h4>Sanjay Kumar</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">I run a small clothing business and this course completely changed
+                            how I approach online marketing. My Facebook ads are now profitable and organic traffic is
+                            up 300%. Highly practical content.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 88 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">NS</div>
+                            <div class="user-meta-info">
+                                <h4>Nisha Sharma</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">October 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">The Google Ads section alone is worth 10x the price. Arjun goes deep
+                            into negative keywords, quality scores, and bidding strategies that nobody else teaches. I'm
+                            now managing ₹15L/month in ad spend.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 78 people found this helpful</span>
+                    </div>
+                </div>
+
+                <div class="review-item-card">
+                    <div>
+                        <div class="user-profile-header">
+                            <div class="user-text-initials">RG</div>
+                            <div class="user-meta-info">
+                                <h4>Rohit Gupta</h4>
+                                <div class="rating-stars">★★★★★</div>
+                                <div class="review-date-stamp">September 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-body-text">Completed 4 other marketing courses before this one and none came
+                            close. The projects are real — you actually launch campaigns and see results. Now
+                            freelancing at ₹80K/month.</p>
+                    </div>
+                    <div class="feedback-interaction-bar">
+                        <span>👍 84 people found this helpful</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
     </div>
+
+
+
     <!-- FOOTER -->
     <footer>
 
@@ -348,7 +697,21 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- <div class="footer-contact-time">
+                    <div class="footer-contact-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        </svg>
+                    </div>
+                    <div class="office">
+                        <ul>
+                            <li><b>Seoni Malwa Time : </b> Mon–Sat &nbsp; 10:00 AM – 2:00 PM </li>
+                            <li>Sunday &nbsp;&nbsp;Closed</li>
+                        </ul>
+                    </div>
+                </div> -->
                 <div class="footer-logo">
                     <a href="https://www.instagram.com/codeofschool/" target="_blank" title="Instagram">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
@@ -584,10 +947,10 @@
             <h3>Copyright &#169; 2025 <a href="https://inforag.com/" target="_blank">Inforag Technology</a> All rights
                 reserved</h3>
         </div>
-
-
     </footer>
 
+    <script src="../script.js"> </script>
+    <script src="../blogs-header.js"></script>
 </body>
 
 </html>
