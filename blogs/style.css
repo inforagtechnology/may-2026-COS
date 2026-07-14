@@ -495,6 +495,12 @@ ul li::before {
     font-weight: 600;
     color: #f9bc16;
   }
+  .bp-article-body ul {
+    margin-left: 60px;
+  }
+  .bp-article-body ul li {
+    list-style: disc;
+  }
 
   .bp-toc-sidebar {
     position: static;
