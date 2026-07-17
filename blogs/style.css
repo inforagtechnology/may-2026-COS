@@ -495,7 +495,8 @@ ul li::before {
     font-weight: 600;
     color: #f9bc16;
   }
-  .bp-article-body ul {
+  .bp-article-body ul,
+  .bp-article-body ol {
     margin-left: 60px;
   }
   .bp-article-body ul li {

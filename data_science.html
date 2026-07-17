@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Science Course | Code of School</title>
+    <title>Data Science with AI Course | Code of School</title>
     <link rel="icon" href="./img/cos-white-logo2.png" type="image/webp" />
-    <meta name="description" content="Learn Data Science with Python, Machine Learning, Deep Learning, and real-world data projects. Become a certified data scientist." />
+    <meta name="description"
+        content="Learn Data Science with Python, Machine Learning, Deep Learning, and real-world data projects. Become a certified data scientist." />
     <link rel="canonical" href="https://codeofschool.com/courses/data-science" />
-    <meta name="keywords" content="Data Science course Indore, Python ML training Indore, Machine Learning course Indore, Code of School" />
-      <meta name="author" content="Ritendra Gour">
+    <meta name="keywords"
+        content="Data Science course Indore, Python ML training Indore, Machine Learning course Indore, Code of School" />
+    <meta name="author" content="Ritendra Gour">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Data Science Course | Code Of School" />
-    <meta property="og:description" content="Learn Data Science with Python, Machine Learning, Deep Learning, and real-world data projects. Become a certified data scientist." />
+    <meta property="og:description"
+        content="Learn Data Science with Python, Machine Learning, Deep Learning, and real-world data projects. Become a certified data scientist." />
     <meta property="og:url" content="https://codeofschool.com/data_science.html" />
     <meta property="og:site_name" content="Code of School" />
     <meta property="og:image" content="https://codeofschool.com/img/cos-white-logo2.png" />
@@ -24,12 +27,14 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@codeofschool">
     <meta name="twitter:title" content="Data Science Course | Code Of School" />
-    <meta name="twitter:description" content="Learn Data Science with Python, Machine Learning, Deep Learning, and real-world data projects. Become a certified data scientist." />
+    <meta name="twitter:description"
+        content="Learn Data Science with Python, Machine Learning, Deep Learning, and real-world data projects. Become a certified data scientist." />
     <meta name="twitter:image" content="https://codeofschool.com/img/cos-white-logo2.png">
 
-      <!-- itemProp -->
-    <meta itemprop="name" content="Code Of School"/>
-      <meta itemprop="description" content="Become a skilled Data Analyst by learning Excel, SQL, Power BI, and Python. Work on real-world datasets and develop the ability to drive data-driven decisions in any industry"/>
+    <!-- itemProp -->
+    <meta itemprop="name" content="Code Of School" />
+    <meta itemprop="description"
+        content="Become a skilled Data Analyst by learning Excel, SQL, Power BI, and Python. Work on real-world datasets and develop the ability to drive data-driven decisions in any industry" />
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -43,61 +48,62 @@
 
 <body>
     <div class="main">
-    <header>
-        <nav>
-            <div class="nav-image">
-                <a href="/"><img src="./img/cos-white-logo.webp" alt="Company Logo"></a>
-            </div>
-            <div class="nav-pg">
-                <ul class="nav-page">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="course.html" id="courses-link">Courses ▼</a></li>
-                    <li><a href="placement.html">Our Placements</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="nav-but">
+        <header>
+            <nav>
+                <div class="nav-image">
+                    <a href="/"><img src="./img/cos-white-logo.webp" alt="Company Logo"></a>
+                </div>
+                <div class="nav-pg">
+                    <ul class="nav-page">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="course.html" id="courses-link">Courses ▼</a></li>
+                        <li><a href="placement.html">Our Placements</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-but">
+                    <a href="tel:+919977723584" class="call-btn">
+                        <i class="fa-solid fa-phone"></i> Enroll Now
+                    </a>
+                </div>
+                <div class="hamburger-menu" id="hamburger-icon">&#9776;</div>
+            </nav>
+        </header>
+
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="all">All</li>
+                <li data-category="web">Web Dev</li>
+                <li data-category="language">Languages</li>
+                <li data-category="app">Mobile.Dev</li>
+                <li data-category="ai">Data & AI</li>
+                <li data-category="other">Other</li>
+            </ul>
+            <ul class="courses" id="course-list"></ul>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="/">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./course.html" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="placement.html">Our Placements</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-button">
                 <a href="tel:+919977723584" class="call-btn">
                     <i class="fa-solid fa-phone"></i> Enroll Now
                 </a>
             </div>
-            <div class="hamburger-menu" id="hamburger-icon">&#9776;</div>
-        </nav>
-    </header>
-
-    <div class="dropdown-panel" id="dropdown-panel">
-        <ul class="categories" id="category-list">
-            <li data-category="all">All</li>
-            <li data-category="web">Web Dev</li>
-            <li data-category="language">Languages</li>
-            <li data-category="app">Mobile.Dev</li>
-            <li data-category="ai">Data & AI</li>
-            <li data-category="other">Other</li>
-        </ul>
-        <ul class="courses" id="course-list"></ul>
-    </div>
-
-    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
-        <div class="close-btn" id="close-mobile-nav">&times;</div>
-        <ul class="mobile-nav-page">
-            <li><a href="/">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./course.html" id="mobile-courses-link">Courses ▼</a></li>
-            <li><a href="placement.html">Our Placements</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
-        </ul>
-        <div class="mobile-nav-button">
-            <a href="tel:+919977723584" class="call-btn">
-                <i class="fa-solid fa-phone"></i> Enroll Now
-            </a>
         </div>
-    </div>
 
-    <a href="https://wa.me/919977723584?text=Hi%20I%20need%20help" class="whatsapp-float" id="whatsappButton" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
-        <span class="notification-dot"></span>
-    </a>
+        <a href="https://wa.me/919977723584?text=Hi%20I%20need%20help" class="whatsapp-float" id="whatsappButton"
+            target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+            <span class="notification-dot"></span>
+        </a>
 
         <!-- ── Hero Section ───────────────────────────────────────────── -->
         <section class="course-sec-one">
@@ -109,7 +115,7 @@
                         <div class="hero-breadcrumb">
                             <a href="/">Home</a><span>›</span>
                             <a href="course.html">Data & AI</a><span>›</span>
-                            <span style="color:rgba(255,255,255,.8)">Data Science Course</span>
+                            <span style="color:rgba(255,255,255,.8)">Data Science with AI Course</span>
                         </div>
 
                         <div class="course-badges">
@@ -120,27 +126,33 @@
 
                         <h1>Master Data Science<br /><em>Python, ML &amp; AI</em></h1>
 
-                        <p class="hero-desc">From Python basics to Machine Learning models and Deep Learning — gain the skills to analyse data, build predictive models, and launch a data science career.</p>
+                        <p class="hero-desc">From Python basics to Machine Learning models and Deep Learning — gain the
+                            skills to analyse data, build predictive models, and launch a data science career.</p>
 
                         <div class="hero-meta">
-                            <div class="meta-item"><span class="meta-icon">⭐</span><strong>4.9</strong>&nbsp;rating</div>
-                            <div class="meta-item"><span class="meta-icon">👥</span><strong>27,300+</strong>&nbsp;students</div>
-                            <div class="meta-item"><span class="meta-icon">🕐</span><strong>80 hours</strong>&nbsp;of video</div>
+                            <div class="meta-item"><span class="meta-icon">⭐</span><strong>4.9</strong>&nbsp;rating
+                            </div>
+                            <div class="meta-item"><span
+                                    class="meta-icon">👥</span><strong>27,300+</strong>&nbsp;students</div>
+                            <div class="meta-item"><span class="meta-icon">🕐</span><strong>80 hours</strong>&nbsp;of
+                                video</div>
                             <div class="meta-item"><span class="meta-icon">🌐</span>English · Hindi subtitles</div>
                             <div class="meta-item"><span class="meta-icon">📱</span>Mobile &amp; Desktop</div>
                         </div>
 
-                          <!-- Hero Action Buttons -->
+                        <!-- Hero Action Buttons -->
                         <div class="hero-action-btns">
 
                             <!-- Download Brochure Button — replace # with your PDF link -->
-                            <a href="./CoursePdf/Data Science Course Content Code of School.pdf" class="hero-btn-download" download>
+                            <a href="./CoursePdf/Data Science Course Content Code of School.pdf"
+                                class="hero-btn-download" download>
                                 <span class="btn-icon">⬇</span>
                                 Download Brochure
                             </a>
 
                             <!-- See Syllabus Button — replace # with your PDF/syllabus link -->
-                            <a href="./CoursePdf/Data Science Course Content Code of School.pdf" class="hero-btn-syllabus" target="_blank">
+                            <a href="./CoursePdf/Data Science Course Content Code of School.pdf"
+                                class="hero-btn-syllabus" target="_blank">
                                 <span class="btn-icon">📄</span>
                                 See Syllabus
                             </a>
@@ -158,7 +170,8 @@
                     <!-- Right: Certificate Preview -->
                     <div>
                         <div class="enroll-card">
-                            <img style="height: 350px;" src="./img/CodeOfSchoolCertificate.png" alt="Course Certificate" class="course-preview-img" />
+                            <img style="height: 350px;" src="./img/CodeOfSchoolCertificate.png" alt="Course Certificate"
+                                class="course-preview-img" />
                         </div>
                     </div>
 
@@ -187,12 +200,30 @@
 
             <!-- ── Stats ──────────────────────────────────────────────── -->
             <div class="stats-container">
-                <div class="stat-box"><h2>100+ Hrs</h2><p>Hands on Learning</p></div>
-                <div class="stat-box"><h2>Live Projects</h2><p>Hands-on practical learning</p></div>
-                <div class="stat-box"><h2>50+ Hrs</h2><p>Practical Assignments</p></div>
-                <div class="stat-box"><h2>Lifetime</h2><p>Community Support</p></div>
-                <div class="stat-box"><h2>8+</h2><p>Experienced Faculties</p></div>
-                <div class="stat-box"><h2>300+</h2><p>Learners Trained Each Year</p></div>
+                <div class="stat-box">
+                    <h2>100+ Hrs</h2>
+                    <p>Hands on Learning</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Live Projects</h2>
+                    <p>Hands-on practical learning</p>
+                </div>
+                <div class="stat-box">
+                    <h2>50+ Hrs</h2>
+                    <p>Practical Assignments</p>
+                </div>
+                <div class="stat-box">
+                    <h2>Lifetime</h2>
+                    <p>Community Support</p>
+                </div>
+                <div class="stat-box">
+                    <h2>8+</h2>
+                    <p>Experienced Faculties</p>
+                </div>
+                <div class="stat-box">
+                    <h2>300+</h2>
+                    <p>Learners Trained Each Year</p>
+                </div>
             </div>
         </section>
 
@@ -212,7 +243,10 @@
         </section>
 
         <section class="text-section">
-            <h3>We provide industry-level, <span>ISO-certified</span> credentials designed to strengthen your professional profile and resume. Throughout our program, you will earn multiple certifications — including completion diplomas, task-based, and excellence awards — that validate your <span>skills and dedication</span> to future employers.</h3>
+            <h3>We provide industry-level, <span>ISO-certified</span> credentials designed to strengthen your
+                professional profile and resume. Throughout our program, you will earn multiple certifications —
+                including completion diplomas, task-based, and excellence awards — that validate your <span>skills and
+                    dedication</span> to future employers.</h3>
         </section>
 
         <!-- ── Curriculum ─────────────────────────────────────────────── -->
@@ -220,7 +254,9 @@
             <div class="left">
 
                 <div class="sec-two-left-partthree">
-                    <h1 class="sec-two-left-partthree-headone">What you'll Learn in Our <span>Data Science</span> course</h1>
+                    <h1 class="sec-two-left-partthree-headone">What you'll Learn in Our <span>Data Science with
+                            AI</span> course
+                    </h1>
                     <div class="sec-two-left-partfour">
                         <h2 class="sec-two-left-partthree-headtwo">Python for data science</h2>
                         <h2 class="sec-two-left-partthree-headtwo">NumPy, Pandas & data wrangling</h2>
@@ -234,48 +270,50 @@
                 </div>
 
 
-            <div class="sec-two-left-partone">
-                <div class="sec-two-left-partone-one">
-                    <h3 class="sec-two-left-partone-headone">0 - 4 Week</h3>
-                    <h3 class="sec-two-left-partone-headtwo">0 - 36 Lessons</h3>
-                </div>
-                <h1 class="sec-two-left-partone-headthree">Python & Data Analysis</h1>
-                <h2 class="sec-two-left-partone-headfour">Learn Python, Pandas, and data exploration fundamentals.</h2>
-                <div class="sec-two-left-parttwo">
-                    <ul>
+                <div class="sec-two-left-partone">
+                    <div class="sec-two-left-partone-one">
+                        <h3 class="sec-two-left-partone-headone">0 - 4 Week</h3>
+                        <h3 class="sec-two-left-partone-headtwo">0 - 36 Lessons</h3>
+                    </div>
+                    <h1 class="sec-two-left-partone-headthree">Python & Data Analysis</h1>
+                    <h2 class="sec-two-left-partone-headfour">Learn Python, Pandas, and data exploration fundamentals.
+                    </h2>
+                    <div class="sec-two-left-parttwo">
+                        <ul>
                             <li class="sec-two-left-parttwo-li">Python & NumPy Basics</li>
                             <li class="sec-two-left-parttwo-li">Pandas & Data Wrangling</li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="sec-two-left-partone">
-                <div class="sec-two-left-partone-one">
-                    <h3 class="sec-two-left-partone-headone">4 - 9 Week</h3>
-                    <h3 class="sec-two-left-partone-headtwo">36 - 72 Lessons</h3>
-                </div>
-                <h1 class="sec-two-left-partone-headthree">Machine Learning</h1>
-                <h2 class="sec-two-left-partone-headfour">Build and evaluate ML models on real datasets.</h2>
-                <div class="sec-two-left-parttwo">
-                    <ul>
+                <div class="sec-two-left-partone">
+                    <div class="sec-two-left-partone-one">
+                        <h3 class="sec-two-left-partone-headone">4 - 9 Week</h3>
+                        <h3 class="sec-two-left-partone-headtwo">36 - 72 Lessons</h3>
+                    </div>
+                    <h1 class="sec-two-left-partone-headthree">Machine Learning</h1>
+                    <h2 class="sec-two-left-partone-headfour">Build and evaluate ML models on real datasets.</h2>
+                    <div class="sec-two-left-parttwo">
+                        <ul>
                             <li class="sec-two-left-parttwo-li">Supervised & Unsupervised Learning</li>
                             <li class="sec-two-left-parttwo-li">Scikit-learn & Model Tuning</li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="sec-two-left-partone">
-                <div class="sec-two-left-partone-one">
-                    <h3 class="sec-two-left-partone-headone">9 - 14 Week</h3>
-                    <h3 class="sec-two-left-partone-headtwo">72 - 108 Lessons</h3>
-                </div>
-                <h1 class="sec-two-left-partone-headthree">Deep Learning & Deployment</h1>
-                <h2 class="sec-two-left-partone-headfour">Learn neural networks, NLP, and deploy models to production.</h2>
-                <div class="sec-two-left-parttwo">
-                    <ul>
+                <div class="sec-two-left-partone">
+                    <div class="sec-two-left-partone-one">
+                        <h3 class="sec-two-left-partone-headone">9 - 14 Week</h3>
+                        <h3 class="sec-two-left-partone-headtwo">72 - 108 Lessons</h3>
+                    </div>
+                    <h1 class="sec-two-left-partone-headthree">Deep Learning & Deployment</h1>
+                    <h2 class="sec-two-left-partone-headfour">Learn neural networks, NLP, and deploy models to
+                        production.</h2>
+                    <div class="sec-two-left-parttwo">
+                        <ul>
                             <li class="sec-two-left-parttwo-li">Deep Learning & TensorFlow</li>
                             <li class="sec-two-left-parttwo-li">Flask Deployment & NLP</li>
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
             </div>
 
@@ -304,7 +342,8 @@
                         <h2 class="right-card-headtwo">Yes</h2>
                     </div>
                     <div class="sec-two-right-button">
-                        <a href="https://wa.me/919977723584?text=Hi!%20I'm%20interested%20in%20your%20Data%20Science%20course.%20Please%20share%20more%20details." target="_blank">
+                        <a href="https://wa.me/919977723584?text=Hi!%20I'm%20interested%20in%20your%20Data%20Science%20course.%20Please%20share%20more%20details."
+                            target="_blank">
                             <button>Enroll Now</button>
                         </a>
                     </div>
@@ -317,78 +356,84 @@
             <h2>Frequently Asked <span>Questions</span></h2>
             <div class="faq">
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>What is Data Science?</p>
-                    <span class="icon">+</span>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What is Data Science?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Data Science is the field of extracting knowledge and insights from structured and
+                            unstructured data using statistics, programming, and machine learning.</p>
+                    </div>
                 </div>
-                <div class="faq-answer">
-                    <p>Data Science is the field of extracting knowledge and insights from structured and unstructured data using statistics, programming, and machine learning.</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>Who can join this course?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Students, graduates, working professionals, and anyone interested in AI/ML. Basic math and
+                            logical thinking is helpful.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>Who can join this course?</p>
-                    <span class="icon">+</span>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What topics are covered?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Python, NumPy, Pandas, Matplotlib, Scikit-learn, Machine Learning, Deep Learning, TensorFlow,
+                            NLP, and model deployment.</p>
+                    </div>
                 </div>
-                <div class="faq-answer">
-                    <p>Students, graduates, working professionals, and anyone interested in AI/ML. Basic math and logical thinking is helpful.</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What is the course duration?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>14 weeks with 108 lessons from Python basics to advanced model deployment.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>What topics are covered?</p>
-                    <span class="icon">+</span>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>Will I get a certificate?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, ISO-certified completion and project certificates from our institute.</p>
+                    </div>
                 </div>
-                <div class="faq-answer">
-                    <p>Python, NumPy, Pandas, Matplotlib, Scikit-learn, Machine Learning, Deep Learning, TensorFlow, NLP, and model deployment.</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>Is Data Science in demand in India?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Data Science is among the top 3 most in-demand jobs globally. India has a severe shortage of
+                            skilled data scientists.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>What is the course duration?</p>
-                    <span class="icon">+</span>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What salary can I expect?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Data Science professionals earn ₹5–10 LPA at entry level and ₹18–40 LPA with 2–3 years of
+                            experience.</p>
+                    </div>
                 </div>
-                <div class="faq-answer">
-                    <p>14 weeks with 108 lessons from Python basics to advanced model deployment.</p>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What career paths are available?</p>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Data Analyst, ML Engineer, Data Scientist, AI Researcher, Business Intelligence Developer,
+                            and Data Engineer.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>Will I get a certificate?</p>
-                    <span class="icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Yes, ISO-certified completion and project certificates from our institute.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>Is Data Science in demand in India?</p>
-                    <span class="icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Data Science is among the top 3 most in-demand jobs globally. India has a severe shortage of skilled data scientists.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>What salary can I expect?</p>
-                    <span class="icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Data Science professionals earn ₹5–10 LPA at entry level and ₹18–40 LPA with 2–3 years of experience.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-question">
-                    <p>What career paths are available?</p>
-                    <span class="icon">+</span>
-                </div>
-                <div class="faq-answer">
-                    <p>Data Analyst, ML Engineer, Data Scientist, AI Researcher, Business Intelligence Developer, and Data Engineer.</p>
-                </div>
-            </div>
             </div>
         </section>
 
@@ -404,63 +449,88 @@
                             <div class="rating-count">Course Rating</div>
                         </div>
                         <div class="rating-bars">
-                            <div class="rating-bar-row"><span class="bar-stars">5 ★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span class="bar-pct">88%</span></div>
-                            <div class="rating-bar-row"><span class="bar-stars">4 ★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span class="bar-pct">9%</span></div>
-                            <div class="rating-bar-row"><span class="bar-stars">3 ★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span class="bar-pct">2%</span></div>
-                            <div class="rating-bar-row"><span class="bar-stars">2 ★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span class="bar-pct">1%</span></div>
-                            <div class="rating-bar-row"><span class="bar-stars">1 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span class="bar-pct">0%</span></div>
+                            <div class="rating-bar-row"><span class="bar-stars">5 ★</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width:88%"></div>
+                                </div><span class="bar-pct">88%</span>
+                            </div>
+                            <div class="rating-bar-row"><span class="bar-stars">4 ★</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width:9%"></div>
+                                </div><span class="bar-pct">9%</span>
+                            </div>
+                            <div class="rating-bar-row"><span class="bar-stars">3 ★</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width:2%"></div>
+                                </div><span class="bar-pct">2%</span>
+                            </div>
+                            <div class="rating-bar-row"><span class="bar-stars">2 ★</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width:1%"></div>
+                                </div><span class="bar-pct">1%</span>
+                            </div>
+                            <div class="rating-bar-row"><span class="bar-stars">1 ★</span>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width:0%"></div>
+                                </div><span class="bar-pct">0%</span>
+                            </div>
                         </div>
                     </div>
                     <div class="reviews-grid">
 
-                    <div class="review-card">
-                        <div class="review-top">
-                            <div class="review-avatar" style="background:#ede9fe;color:#7c3aed">RD</div>
-                            <div>
-                                <div class="review-name">Rahul Dubey</div>
-                                <div class="review-stars">★★★★★</div>
-                                <div class="review-date">November 2024</div>
+                        <div class="review-card">
+                            <div class="review-top">
+                                <div class="review-avatar" style="background:#ede9fe;color:#7c3aed">RD</div>
+                                <div>
+                                    <div class="review-name">Rahul Dubey</div>
+                                    <div class="review-stars">★★★★★</div>
+                                    <div class="review-date">November 2024</div>
+                                </div>
                             </div>
+                            <p class="review-text">The ML model building section changed my career. Applied gradient
+                                boosting on a real dataset for my capstone project. Got a data analyst role at ₹7 LPA.
+                            </p>
+                            <div class="helpful">👍 <span>162 people</span> found this helpful</div>
                         </div>
-                        <p class="review-text">The ML model building section changed my career. Applied gradient boosting on a real dataset for my capstone project. Got a data analyst role at ₹7 LPA.</p>
-                        <div class="helpful">👍 <span>162 people</span> found this helpful</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-top">
-                            <div class="review-avatar" style="background:#dcfce7;color:#059669">SN</div>
-                            <div>
-                                <div class="review-name">Simran Negi</div>
-                                <div class="review-stars">★★★★★</div>
-                                <div class="review-date">October 2024</div>
+                        <div class="review-card">
+                            <div class="review-top">
+                                <div class="review-avatar" style="background:#dcfce7;color:#059669">SN</div>
+                                <div>
+                                    <div class="review-name">Simran Negi</div>
+                                    <div class="review-stars">★★★★★</div>
+                                    <div class="review-date">October 2024</div>
+                                </div>
                             </div>
+                            <p class="review-text">Pandas and data visualisation were taught brilliantly. I can now tell
+                                compelling data stories. My company promoted me to data analyst within 4 months.</p>
+                            <div class="helpful">👍 <span>108 people</span> found this helpful</div>
                         </div>
-                        <p class="review-text">Pandas and data visualisation were taught brilliantly. I can now tell compelling data stories. My company promoted me to data analyst within 4 months.</p>
-                        <div class="helpful">👍 <span>108 people</span> found this helpful</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-top">
-                            <div class="review-avatar" style="background:#fef3c7;color:#d97706">AJ</div>
-                            <div>
-                                <div class="review-name">Aditya Jain</div>
-                                <div class="review-stars">★★★★★</div>
-                                <div class="review-date">October 2024</div>
+                        <div class="review-card">
+                            <div class="review-top">
+                                <div class="review-avatar" style="background:#fef3c7;color:#d97706">AJ</div>
+                                <div>
+                                    <div class="review-name">Aditya Jain</div>
+                                    <div class="review-stars">★★★★★</div>
+                                    <div class="review-date">October 2024</div>
+                                </div>
                             </div>
+                            <p class="review-text">TensorFlow and NLP sections are real-world focused. Built a sentiment
+                                analysis tool for my final project. Now working as a junior ML engineer at ₹8.5 LPA.</p>
+                            <div class="helpful">👍 <span>84 people</span> found this helpful</div>
                         </div>
-                        <p class="review-text">TensorFlow and NLP sections are real-world focused. Built a sentiment analysis tool for my final project. Now working as a junior ML engineer at ₹8.5 LPA.</p>
-                        <div class="helpful">👍 <span>84 people</span> found this helpful</div>
-                    </div>
-                    <div class="review-card">
-                        <div class="review-top">
-                            <div class="review-avatar" style="background:#dbeafe;color:#2563eb">PG</div>
-                            <div>
-                                <div class="review-name">Priyanka Gupta</div>
-                                <div class="review-stars">★★★★★</div>
-                                <div class="review-date">September 2024</div>
+                        <div class="review-card">
+                            <div class="review-top">
+                                <div class="review-avatar" style="background:#dbeafe;color:#2563eb">PG</div>
+                                <div>
+                                    <div class="review-name">Priyanka Gupta</div>
+                                    <div class="review-stars">★★★★★</div>
+                                    <div class="review-date">September 2024</div>
+                                </div>
                             </div>
+                            <p class="review-text">I had no coding background. The Python + Pandas foundation was rock
+                                solid. Completed the course and got a remote data analyst job at ₹6 LPA.</p>
+                            <div class="helpful">👍 <span>61 people</span> found this helpful</div>
                         </div>
-                        <p class="review-text">I had no coding background. The Python + Pandas foundation was rock solid. Completed the course and got a remote data analyst job at ₹6 LPA.</p>
-                        <div class="helpful">👍 <span>61 people</span> found this helpful</div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -468,7 +538,7 @@
 
     </div><!-- end .main -->
 
-   <footer>
+    <footer>
 
         <div class="footer-partone">
 
@@ -485,7 +555,7 @@
                 </div>
 
 
-                 <div class="footer-log">
+                <div class="footer-log">
                     <div class="logo-box">
                         <img src="./img/course_img/cmmi-removebg-preview-3.png" alt="CMMI">
                     </div>
@@ -582,7 +652,7 @@
                     <div class="contact-no">
                         <ul class="phone-list">
 
-                               <li><a href="tel:6263945418">+91 6263-945-418 ,</a></li>
+                            <li><a href="tel:6263945418">+91 6263-945-418 ,</a></li>
                             <li><a href="tel:9977723584">+91 9977-723-584 </a></li>
                         </ul>
                     </div>
@@ -601,7 +671,8 @@
                     <div class="footer-contact-location">
                         <a href="https://www.google.com/maps/place/CANARA+BANK+-+INDORE+PALASIA+POINT/@22.7229014,75.8875932,20.5z/data=!4m7!3m6!1s0x3962fd4ea8f55ef5:0xc0faeb545450efb5!4b1!8m2!3d22.7230581!4d75.8878384!16s%2Fg%2F1q62fh6ws?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D"
                             target="_blank">
-                            <b>Third Branch (Indore):</b>Office No.104 , Day Tower , Above Canara bank, Behind Shekhar central , Palasia Square Indore
+                            <b>Third Branch (Indore):</b>Office No.104 , Day Tower , Above Canara bank, Behind Shekhar
+                            central , Palasia Square Indore
 
                         </a>
                     </div>
@@ -618,7 +689,7 @@
                     </div>
                     <div class="contact-no">
                         <ul class="phone-list">
-                          
+
                             <li><a href="tel:+919977085405">+91 99770-85405 ,</a></li>
                             <li><a href="tel:9977723584">+91 9977-723-584 </a></li>
                         </ul>
@@ -936,6 +1007,7 @@
 
 
     <script src="script.js"></script>
-   
+
 </body>
+
 </html>
