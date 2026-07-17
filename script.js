@@ -278,60 +278,65 @@ document.addEventListener('DOMContentLoaded', function () {
   const coursesByCategory = {
     all: [
       { name: "Digital Marketing", link: "digital_marketing.html" },
-      { name: "C with C++", link: "C_and_C++.html" },
-      { name: "Java Core & Advanced", link: "java_core_and_advanced.html" },
-      { name: "Python", link: "python.html" },
-      { name: "Frontend (React/Angular)", link: "frontend_with_react.html" },
-      { name: "WordPress", link: "wordpress_development.html" },
-      { name: "Python with Django", link: "django.html" },
+      { name: "Digital Marketing with AI", link: "digital_marketing_with_ai.html" },
+      { name: "Python Full Stack", link: "python_full_stack.html" },
+      { name: "Python AI and ML", link: "python_ai_and_ml_course.html" },
       { name: "MERN Stack", link: "mern_stack.html" },
       { name: "MEAN Stack", link: "mean_stack.html" },
-      { name: "Java Full Stack", link: "java_full_stack.html" },
-      { name: "Python Full Stack", link: "python_full_stack.html" },
-      { name: "Video Editing", link: "video_editing.html" },
-      { name: "PHP Core & Advanced", link: "php.html" },
-      { name: "Data Science", link: "data_science.html" },
       { name: "Data Analysis", link: "data_analysis.html" },
-      { name: "Mobile App Development", link: "mobile_app_development.html" },
-      { name: "UI/UX Development ", link: "ui_ux_design.html" },
-      { name: "Next.js", link: "nextjs_development.html" },
-      { name: "DSA and C++", link: "dsa.html" },
-      { name: "Frontend (React/Angular)", link: "frontend_with_react.html" },
-      { name: "React Native", link: "reactnative.html" },
-
-
-
-
-
+      { name: "Data Science with AI", link: "data_science.html" },
+      { name: "Video Editing", link: "video_editing.html" },
+      { name: "Graphics & Video Editing", link: "graphics_design_video_editing.html" },
+      { name: "Graphics Design", link: "graphics_design_course.html" },
+      { name: "C & C++", link: "C_and_C++.html" },
+      { name: "Java Full Stack", link: "java_full_stack.html" },
+      { name: "Java Core & Advanced", link: "java_core_and_advanced.html" },
+      { name: "C, C++ & DSA", link: "dsa.html" },
+      { name: "Java & DSA", link: "java_dsa_course.html" },
+      { name: "React", link: "frontend_with_react.html" },
+      // { name: "Angular", link: "angular_course.html" },
+      { name: "Python with Django", link: "django.html" },
+      // { name: "Python", link: "python.html" },
+      { name: "PHP Core & Advanced", link: "php.html" },
+      // { name: "WordPress", link: "wordpress_development.html" },
+      // { name: "Mobile App Development", link: "mobile_app_development.html" },
+      // { name: "UI/UX Development ", link: "ui_ux_design.html" },
+      // { name: "Next.js", link: "nextjs_development.html" },
     ],
     web: [
-      { name: "Next.js", link: "nextjs_development.html" },
-      { name: "WordPress", link: "wordpress_development.html" },
-      { name: "PHP Core & Advanced", link: "php.html" },
-      { name: "Front End (React / Angular)", link: "frontend_with_react.html" },
-      { name: "Python with Django", link: "django.html" },
-       { name: "MERN Stack", link: "mern_stack.html" },
+      // { name: "Next.js", link: "nextjs_development.html" },
+      // { name: "WordPress", link: "wordpress_development.html" },
+      { name: "MERN Stack", link: "mern_stack.html" },
       { name: "MEAN Stack", link: "mean_stack.html" },
+      { name: "React", link: "frontend_with_react.html" },
+      { name: "PHP Core & Advanced", link: "php.html" },
+
+      { name: "Python with Django", link: "django.html" },
       { name: "Java Full Stack", link: "java_full_stack.html" },
       { name: "Python Full Stack", link: "python_full_stack.html" }
+
     ],
     language: [
-      { name: "C with C++", link: "C_and_C++.html" },
-      { name: "Python", link: "python.html" },
+      { name: "C & C++", link: "C_and_C++.html" },
+      // { name: "Python", link: "python.html" },
       { name: "Java Core & Advanced", link: "java_core_and_advanced.html" },
-      { name: "DSA and C++", link: "dsa.html" }
+      { name: "C, C++ with DSA", link: "dsa.html" },
+      { name: "Java & DSA", link: "java_dsa_course.html" },
     ],
     app: [
-      { name: "React Native", link: "reactnative.html" }
+      { name: "React", link: "react_course.html" }
     ],
     ai: [
-      { name: "Data Science", link: "data_science.html" },
+      { name: "Python AI and ML", link: "python_ai_and_ml_course.html" },
+      { name: "Data Science with AI", link: "data_science.html" },
       { name: "Machine Learning", link: "machine_learning.html" }
     ],
     other: [
       { name: "Digital Marketing", link: "digital_marketing.html" },
+      { name: "Digital Marketing with AI", link: "digital_marketing_with_ai.html" },
       { name: "Video Editing", link: "video_editing.html" },
-      { name: "BDE", link: "business_development_executive.html" }
+      { name: "Graphics & Video Editing", link: "graphics_design_video_editing.html" },
+      // { name: "BDE", link: "business_development_executive.html" }
     ]
   };
 
@@ -685,17 +690,17 @@ faqs.forEach((item) => {
 const cards = document.querySelectorAll('.certificate-gallery-card');
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+  entries.forEach(entry => {
 
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        } else {
-            entry.target.classList.remove('show');
-        }
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
 
-    });
+  });
 }, {
-    threshold: 0.1
+  threshold: 0.1
 });
 
 cards.forEach(card => observer.observe(card));

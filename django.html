@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python with Django Course in Indore | Code of School</title>
-    <meta name="description" content="Learn Python and Django to build powerful web applications. REST APIs, authentication, PostgreSQL, deployment on AWS. Get certified at Code of School, Indore." />
-    <meta name="keywords" content="Python Django course Indore, Django training Indore, Python web development Indore, Code of School Django" />
-  <meta name="author" content="Ritendra Gour">
+    <meta name="description"
+        content="Learn Python and Django to build powerful web applications. REST APIs, authentication, PostgreSQL, deployment on AWS. Get certified at Code of School, Indore." />
+    <meta name="keywords"
+        content="Python Django course Indore, Django training Indore, Python web development Indore, Code of School Django" />
+    <meta name="author" content="Ritendra Gour">
     <meta name="robots" content="index, follow">
     <link rel="icon" href="./img/cos-white-logo2.png" type="image/webp" />
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Python with Django Course | Code of School — Build Web Apps with Python" />
-    <meta property="og:description" content="Learn Python and Django to build powerful web applications. REST APIs, authentication, PostgreSQL, deployment on AWS. Get certified at Code of School, Indore." />
+    <meta property="og:description"
+        content="Learn Python and Django to build powerful web applications. REST APIs, authentication, PostgreSQL, deployment on AWS. Get certified at Code of School, Indore." />
     <meta property="og:url" content="https://codeofschool.com/python_with_django.html" />
     <meta property="og:site_name" content="Code of School" />
     <meta property="og:image" content="https://codeofschool.com/img/cos-white-logo2.png" />
@@ -21,12 +25,13 @@
     <meta name="twitter:card" content="https://codeofschool.com/img/cos-white-logo2.png" />
     <meta name="twitter:site" content="@codeofschool">
     <meta name="twitter:title" content="Python with Django Course | Code of School — Build Web Apps with Python" />
-    <meta name="twitter:description" content="Learn Python and Django to build powerful web applications. REST APIs, authentication, PostgreSQL, deployment on AWS. Get certified at Code of School, Indore." />
+    <meta name="twitter:description"
+        content="Learn Python and Django to build powerful web applications. REST APIs, authentication, PostgreSQL, deployment on AWS. Get certified at Code of School, Indore." />
     <meta name="twitter:image" content="https://codeofschool.com/img/cos-white-logo2.png">
-  
 
-<!-- itemprop -->
-   
+
+    <!-- itemprop -->
+
     <meta itemprop="name" content="Code Of School" />
     <meta itemprop="description"
         content="Learn Python and Django to develop powerful web applications. Cover REST APIs, authentication, PostgreSQL, and AWS deployment. Get certified at Code of School, Indore." />
@@ -39,130 +44,161 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
+
 <body>
-<div class="main">
-    <header>
-        <nav>
-            <div class="nav-image"><a href="/"><img src="./img/cos-white-logo.webp" alt="Company Logo"></a></div>
-            <div class="nav-pg">
-                <ul class="nav-page">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="course.html" id="courses-link">Courses ▼</a></li>
-                    <li><a href="placement.html">Our Placements</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="nav-but">
+    <div class="main">
+        <header>
+            <nav>
+                <div class="nav-image"><a href="/"><img src="./img/cos-white-logo.webp" alt="Company Logo"></a></div>
+                <div class="nav-pg">
+                    <ul class="nav-page">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="course.html" id="courses-link">Courses ▼</a></li>
+                        <li><a href="placement.html">Our Placements</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-but">
+                    <a href="tel:+919977723584" class="call-btn"><i class="fa-solid fa-phone"></i> Enroll Now</a>
+                </div>
+                <div class="hamburger-menu" id="hamburger-icon">&#9776;</div>
+            </nav>
+        </header>
+
+        <div class="dropdown-panel" id="dropdown-panel">
+            <ul class="categories" id="category-list">
+                <li data-category="all">All</li>
+                <li data-category="web">Web Dev</li>
+                <li data-category="language">Languages</li>
+                <li data-category="app">Mobile.Dev</li>
+                <li data-category="ai">Data &amp; AI</li>
+                <li data-category="other">Other</li>
+            </ul>
+            <ul class="courses" id="course-list"></ul>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <div class="close-btn" id="close-mobile-nav">&times;</div>
+            <ul class="mobile-nav-page">
+                <li><a href="/">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./course.html" id="mobile-courses-link">Courses ▼</a></li>
+                <li><a href="placement.html">Our Placements</a></li>
+                <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-nav-button">
                 <a href="tel:+919977723584" class="call-btn"><i class="fa-solid fa-phone"></i> Enroll Now</a>
             </div>
-            <div class="hamburger-menu" id="hamburger-icon">&#9776;</div>
-        </nav>
-    </header>
-
-    <div class="dropdown-panel" id="dropdown-panel">
-        <ul class="categories" id="category-list">
-            <li data-category="all">All</li>
-            <li data-category="web">Web Dev</li>
-            <li data-category="language">Languages</li>
-            <li data-category="app">Mobile.Dev</li>
-            <li data-category="ai">Data &amp; AI</li>
-            <li data-category="other">Other</li>
-        </ul>
-        <ul class="courses" id="course-list"></ul>
-    </div>
-
-    <div class="mobile-nav-overlay" id="mobile-nav-overlay">
-        <div class="close-btn" id="close-mobile-nav">&times;</div>
-        <ul class="mobile-nav-page">
-            <li><a href="/">Home</a></li>
-            <li><a href="./about-us.html">About Us</a></li>
-            <li><a href="./course.html" id="mobile-courses-link">Courses ▼</a></li>
-            <li><a href="placement.html">Our Placements</a></li>
-            <li><a href="./contact-us.html">Contact Us</a></li>
-        </ul>
-        <div class="mobile-nav-button">
-            <a href="tel:+919977723584" class="call-btn"><i class="fa-solid fa-phone"></i> Enroll Now</a>
         </div>
-    </div>
 
-    <section class="course-sec-one">
-        <div class="hero">
-            <div class="hero-grid">
-                <div>
-                    <div class="hero-breadcrumb">
-                        <a href="/">Home</a><span>›</span>
-                        <a href="course.html">Courses</a><span>›</span>
-                        <span style="color:rgba(255,255,255,.8)">Python with Django</span>
-                    </div>
-                    <div class="course-badges">
-                        <span class="badge badge-gold">⭐ Bestseller</span>
-                        <span class="badge badge-green">✓ Updated 2025</span>
-                        <span class="badge badge-blue">🎓 Certificate Included</span>
-                    </div>
-                    <h1>Master Python with Django<br /><em>Build Powerful Web Applications</em></h1>
-                    <p class="hero-desc">The most comprehensive Python-Django course. Learn Python OOP, Django MVT, REST APIs, JWT authentication, PostgreSQL, Celery, Redis, and deploy full-stack web applications on AWS.</p>
-                    <div class="hero-meta">
-                        <div class="meta-item"><span class="meta-icon">⭐</span><strong>4.8</strong>&nbsp;rating</div>
-                        <div class="meta-item"><span class="meta-icon">👥</span><strong>11,600+</strong>&nbsp;students</div>
-                        <div class="meta-item"><span class="meta-icon">🕐</span><strong>70 hours</strong>&nbsp;of video</div>
-                        <div class="meta-item"><span class="meta-icon">🌐</span>English &middot; Hindi</div>
-                        <div class="meta-item"><span class="meta-icon">📱</span>Mobile &amp; Desktop</div>
-                    </div>
-                     <!-- Hero Action Buttons -->
+        <section class="course-sec-one">
+            <div class="hero">
+                <div class="hero-grid">
+                    <div>
+                        <div class="hero-breadcrumb">
+                            <a href="/">Home</a><span>›</span>
+                            <a href="course.html">Courses</a><span>›</span>
+                            <span style="color:rgba(255,255,255,.8)">Python with Django</span>
+                        </div>
+                        <div class="course-badges">
+                            <span class="badge badge-gold">⭐ Bestseller</span>
+                            <span class="badge badge-green">✓ Updated 2025</span>
+                            <span class="badge badge-blue">🎓 Certificate Included</span>
+                        </div>
+                        <h1>Master Python with Django<br /><em>Build Powerful Web Applications</em></h1>
+                        <p class="hero-desc">The most comprehensive Python-Django course. Learn Python OOP, Django MVT,
+                            REST APIs, JWT authentication, PostgreSQL, Celery, Redis, and deploy full-stack web
+                            applications on AWS.</p>
+                        <div class="hero-meta">
+                            <div class="meta-item"><span class="meta-icon">⭐</span><strong>4.8</strong>&nbsp;rating
+                            </div>
+                            <div class="meta-item"><span
+                                    class="meta-icon">👥</span><strong>11,600+</strong>&nbsp;students</div>
+                            <div class="meta-item"><span class="meta-icon">🕐</span><strong>70 hours</strong>&nbsp;of
+                                video</div>
+                            <div class="meta-item"><span class="meta-icon">🌐</span>English &middot; Hindi</div>
+                            <div class="meta-item"><span class="meta-icon">📱</span>Mobile &amp; Desktop</div>
+                        </div>
+                        <!-- Hero Action Buttons -->
                         <div class="hero-action-btns">
 
                             <!-- Download Brochure Button — replace # with your PDF link -->
-                            <a href="./CoursePdf/Python Development Course Content Code of School.pdf" class="hero-btn-download" download>
+                            <a href="./CoursePdf/Python Development Course Content Code of School.pdf"
+                                class="hero-btn-download" download>
                                 <span class="btn-icon">⬇</span>
                                 Download Brochure
                             </a>
 
                             <!-- See Syllabus Button — replace # with your PDF/syllabus link -->
-                            <a href="./CoursePdf/Python Development Course Content Code of School.pdf" class="hero-btn-syllabus" target="_blank">
+                            <a href="./CoursePdf/Python Development Course Content Code of School.pdf"
+                                class="hero-btn-syllabus" target="_blank">
                                 <span class="btn-icon">📄</span>
                                 See Syllabus
                             </a>
 
                         </div>
-                    <div class="hero-stats-row">
-                    </div> <div class="hero-stat"><strong>70h</strong><span>Video Content</span></div><div class="hero-stat"><strong>12</strong><span>Real Projects</span></div><div class="hero-stat"><strong>160+</strong><span>Lectures</span></div><div class="hero-stat"><strong>Lifetime</strong><span>Access</span></div>
-                </div>
-                <div>
-                    <div class="enroll-card">
-                        <img style="height:350px;" src="./img/CodeOfSchoolCertificate.png"
-                            alt="Python with Django Course in Indore | Code of School Certificate Preview" class="course-preview-img" />
+                        <div class="hero-stats-row">
+                        </div>
+                        <div class="hero-stat"><strong>70h</strong><span>Video Content</span></div>
+                        <div class="hero-stat"><strong>12</strong><span>Real Projects</span></div>
+                        <div class="hero-stat"><strong>160+</strong><span>Lectures</span></div>
+                        <div class="hero-stat"><strong>Lifetime</strong><span>Access</span></div>
+                    </div>
+                    <div>
+                        <div class="enroll-card">
+                            <img style="height:350px;" src="./img/CodeOfSchoolCertificate.png"
+                                alt="Python with Django Course in Indore | Code of School Certificate Preview"
+                                class="course-preview-img" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
     </section>
 
     <section>
         <div class="slider">
             <div class="slide-track">
-                    <div class="slide-item">Python OOP</div>
-                    <div class="slide-item">Django MVT</div>
-                    <div class="slide-item">REST APIs</div>
-                    <div class="slide-item">PostgreSQL</div>
-                    <div class="slide-item">JWT Auth</div>
-                    <div class="slide-item">AWS Deployment</div>
-                    <div class="slide-item">Python OOP</div>
-                    <div class="slide-item">Django MVT</div>
-                    <div class="slide-item">REST APIs</div>
-                    <div class="slide-item">PostgreSQL</div>
-                    <div class="slide-item">JWT Auth</div>
-                    <div class="slide-item">AWS Deployment</div>
+                <div class="slide-item">Python OOP</div>
+                <div class="slide-item">Django MVT</div>
+                <div class="slide-item">REST APIs</div>
+                <div class="slide-item">PostgreSQL</div>
+                <div class="slide-item">JWT Auth</div>
+                <div class="slide-item">AWS Deployment</div>
+                <div class="slide-item">Python OOP</div>
+                <div class="slide-item">Django MVT</div>
+                <div class="slide-item">REST APIs</div>
+                <div class="slide-item">PostgreSQL</div>
+                <div class="slide-item">JWT Auth</div>
+                <div class="slide-item">AWS Deployment</div>
             </div>
         </div>
         <div class="stats-container">
-                <div class="stat-box"><h2>60+ Hrs</h2><p>Hands on Learning</p></div>
-                <div class="stat-box"><h2>Live Projects</h2><p>Real-world applications</p></div>
-                <div class="stat-box"><h2>40+ Hrs</h2><p>Practical Assignments</p></div>
-                <div class="stat-box"><h2>Lifetime</h2><p>Community Support</p></div>
-                <div class="stat-box"><h2>8+</h2><p>Experienced Faculties</p></div>
-                <div class="stat-box"><h2>300+</h2><p>Learners Trained Each Year</p></div>
+            <div class="stat-box">
+                <h2>60+ Hrs</h2>
+                <p>Hands on Learning</p>
+            </div>
+            <div class="stat-box">
+                <h2>Live Projects</h2>
+                <p>Real-world applications</p>
+            </div>
+            <div class="stat-box">
+                <h2>40+ Hrs</h2>
+                <p>Practical Assignments</p>
+            </div>
+            <div class="stat-box">
+                <h2>Lifetime</h2>
+                <p>Community Support</p>
+            </div>
+            <div class="stat-box">
+                <h2>8+</h2>
+                <p>Experienced Faculties</p>
+            </div>
+            <div class="stat-box">
+                <h2>300+</h2>
+                <p>Learners Trained Each Year</p>
+            </div>
         </div>
     </section>
 
@@ -170,25 +206,29 @@
         <h2 class="cert-title">Get a<span> Certificate </span>from a <span>Certified Institute</span></h2>
         <div class="cert-slider">
             <div class="cert-track">
-               <div class="cert-card"><img src="./img/stu/img(1).png" alt="certificate"></div>
-                    <div class="cert-card"><img src="./img/stu/img(2).png" alt="certificate"></div>
-                    <div class="cert-card"><img src="./img/stu/img(3).png" alt="certificate"></div>
-                    <div class="cert-card"><img src="./img/stu/img(4).png" alt="certificate"></div>
-                    <div class="cert-card"><img src="./img/stu/img(5).png" alt="certificate"></div>
-                    <div class="cert-card"><img src="./img/stu/img(2).png" alt="certificate"></div>
+                <div class="cert-card"><img src="./img/stu/img(1).png" alt="certificate"></div>
+                <div class="cert-card"><img src="./img/stu/img(2).png" alt="certificate"></div>
+                <div class="cert-card"><img src="./img/stu/img(3).png" alt="certificate"></div>
+                <div class="cert-card"><img src="./img/stu/img(4).png" alt="certificate"></div>
+                <div class="cert-card"><img src="./img/stu/img(5).png" alt="certificate"></div>
+                <div class="cert-card"><img src="./img/stu/img(2).png" alt="certificate"></div>
             </div>
         </div>
     </section>
 
     <section class="text-section">
-   
-       <h3> We provide , <span>ISO-certified</span> backend development credentials using Django. Earn <span>credentials</span> in web application development, APIs, and deployment — proving your backend expertise.</h3>
+
+        <h3> We provide , <span>ISO-certified</span> backend development credentials using Django. Earn
+            <span>credentials</span> in web application development, APIs, and deployment — proving your backend
+            expertise.
+        </h3>
     </section>
 
     <section class="gallery">
         <div class="left">
             <div class="sec-two-left-partthree">
-                <h1 class="sec-two-left-partthree-headone">What you'll Learn in Our <span>Python with Django</span> Course</h1>
+                <h1 class="sec-two-left-partthree-headone">What you'll Learn in Our <span>Python with Django</span>
+                    Course</h1>
                 <div class="sec-two-left-partfour">
                     <h2 class="sec-two-left-partthree-headtwo">Python OOP & Advanced Concepts</h2>
                     <h2 class="sec-two-left-partthree-headtwo">Django MVT Architecture</h2>
@@ -201,74 +241,90 @@
                 </div>
             </div>
 
-                <div class="sec-two-left-partone">
-                    <div class="sec-two-left-partone-one">
-                        <h3 class="sec-two-left-partone-headone">0 – 3 Week</h3>
-                        <h3 class="sec-two-left-partone-headtwo">0 – 25 Lessons</h3>
-                    </div>
-                    <h1 class="sec-two-left-partone-headthree">Python for Django</h1>
-                    <h2 class="sec-two-left-partone-headfour">Master Python OOP needed for Django development.</h2>
-                    <div class="sec-two-left-parttwo">
-                        <ul>
-                            <li class="sec-two-left-parttwo-li">Classes, Decorators & Generators</li>
-                            <li class="sec-two-left-parttwo-li">File Handling & Virtual Environments</li>
-                        </ul>
-                    </div>
+            <div class="sec-two-left-partone">
+                <div class="sec-two-left-partone-one">
+                    <h3 class="sec-two-left-partone-headone">0 – 3 Week</h3>
+                    <h3 class="sec-two-left-partone-headtwo">0 – 25 Lessons</h3>
                 </div>
-                <div class="sec-two-left-partone">
-                    <div class="sec-two-left-partone-one">
-                        <h3 class="sec-two-left-partone-headone">3 – 7 Week</h3>
-                        <h3 class="sec-two-left-partone-headtwo">25 – 65 Lessons</h3>
-                    </div>
-                    <h1 class="sec-two-left-partone-headthree">Django Core</h1>
-                    <h2 class="sec-two-left-partone-headfour">Build full web apps with Django MVT and ORM.</h2>
-                    <div class="sec-two-left-parttwo">
-                        <ul>
-                            <li class="sec-two-left-parttwo-li">Models, Views & Templates</li>
-                            <li class="sec-two-left-parttwo-li">Forms, Admin & Authentication</li>
-                        </ul>
-                    </div>
+                <h1 class="sec-two-left-partone-headthree">Python for Django</h1>
+                <h2 class="sec-two-left-partone-headfour">Master Python OOP needed for Django development.</h2>
+                <div class="sec-two-left-parttwo">
+                    <ul>
+                        <li class="sec-two-left-parttwo-li">Classes, Decorators & Generators</li>
+                        <li class="sec-two-left-parttwo-li">File Handling & Virtual Environments</li>
+                    </ul>
                 </div>
-                <div class="sec-two-left-partone">
-                    <div class="sec-two-left-partone-one">
-                        <h3 class="sec-two-left-partone-headone">7 – 11 Week</h3>
-                        <h3 class="sec-two-left-partone-headtwo">65 – 110 Lessons</h3>
-                    </div>
-                    <h1 class="sec-two-left-partone-headthree">REST APIs & Auth</h1>
-                    <h2 class="sec-two-left-partone-headfour">Create and secure REST APIs with DRF and JWT.</h2>
-                    <div class="sec-two-left-parttwo">
-                        <ul>
-                            <li class="sec-two-left-parttwo-li">Django REST Framework</li>
-                            <li class="sec-two-left-parttwo-li">JWT, Permissions & Throttling</li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="sec-two-left-partone">
+                <div class="sec-two-left-partone-one">
+                    <h3 class="sec-two-left-partone-headone">3 – 7 Week</h3>
+                    <h3 class="sec-two-left-partone-headtwo">25 – 65 Lessons</h3>
                 </div>
-                <div class="sec-two-left-partone">
-                    <div class="sec-two-left-partone-one">
-                        <h3 class="sec-two-left-partone-headone">11 – 14 Week</h3>
-                        <h3 class="sec-two-left-partone-headtwo">110 – 160 Lessons</h3>
-                    </div>
-                    <h1 class="sec-two-left-partone-headthree">Deployment & Projects</h1>
-                    <h2 class="sec-two-left-partone-headfour">Deploy to AWS and build capstone projects.</h2>
-                    <div class="sec-two-left-parttwo">
-                        <ul>
-                            <li class="sec-two-left-parttwo-li">Celery, Redis & Caching</li>
-                            <li class="sec-two-left-parttwo-li">Docker & AWS EC2 Deployment</li>
-                        </ul>
-                    </div>
+                <h1 class="sec-two-left-partone-headthree">Django Core</h1>
+                <h2 class="sec-two-left-partone-headfour">Build full web apps with Django MVT and ORM.</h2>
+                <div class="sec-two-left-parttwo">
+                    <ul>
+                        <li class="sec-two-left-parttwo-li">Models, Views & Templates</li>
+                        <li class="sec-two-left-parttwo-li">Forms, Admin & Authentication</li>
+                    </ul>
                 </div>
+            </div>
+            <div class="sec-two-left-partone">
+                <div class="sec-two-left-partone-one">
+                    <h3 class="sec-two-left-partone-headone">7 – 11 Week</h3>
+                    <h3 class="sec-two-left-partone-headtwo">65 – 110 Lessons</h3>
+                </div>
+                <h1 class="sec-two-left-partone-headthree">REST APIs & Auth</h1>
+                <h2 class="sec-two-left-partone-headfour">Create and secure REST APIs with DRF and JWT.</h2>
+                <div class="sec-two-left-parttwo">
+                    <ul>
+                        <li class="sec-two-left-parttwo-li">Django REST Framework</li>
+                        <li class="sec-two-left-parttwo-li">JWT, Permissions & Throttling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sec-two-left-partone">
+                <div class="sec-two-left-partone-one">
+                    <h3 class="sec-two-left-partone-headone">11 – 14 Week</h3>
+                    <h3 class="sec-two-left-partone-headtwo">110 – 160 Lessons</h3>
+                </div>
+                <h1 class="sec-two-left-partone-headthree">Deployment & Projects</h1>
+                <h2 class="sec-two-left-partone-headfour">Deploy to AWS and build capstone projects.</h2>
+                <div class="sec-two-left-parttwo">
+                    <ul>
+                        <li class="sec-two-left-parttwo-li">Celery, Redis & Caching</li>
+                        <li class="sec-two-left-parttwo-li">Docker & AWS EC2 Deployment</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
         <div class="right">
             <div class="sec-two-right-partone">
                 <h1 class="sec-two-right-partone-head">Course Duration</h1>
-                <div class="sec-two-right-card"><h1 class="right-card-head">Duration</h1><h2 class="right-card-headtwo">14 Weeks</h2></div>
-                <div class="sec-two-right-card"><h1 class="right-card-head">Lessons</h1><h2 class="right-card-headtwo">160 Lessons</h2></div>
-                <div class="sec-two-right-card"><h1 class="right-card-head">Language</h1><h2 class="right-card-headtwo">English+Hindi</h2></div>
-                <div class="sec-two-right-card"><h1 class="right-card-head">Certificate</h1><h2 class="right-card-headtwo">Yes</h2></div>
-                <div class="sec-two-right-card"><h1 class="right-card-head">Live Classes</h1><h2 class="right-card-headtwo">Yes</h2></div>
+                <div class="sec-two-right-card">
+                    <h1 class="right-card-head">Duration</h1>
+                    <h2 class="right-card-headtwo">14 Weeks</h2>
+                </div>
+                <div class="sec-two-right-card">
+                    <h1 class="right-card-head">Lessons</h1>
+                    <h2 class="right-card-headtwo">160 Lessons</h2>
+                </div>
+                <div class="sec-two-right-card">
+                    <h1 class="right-card-head">Language</h1>
+                    <h2 class="right-card-headtwo">English+Hindi</h2>
+                </div>
+                <div class="sec-two-right-card">
+                    <h1 class="right-card-head">Certificate</h1>
+                    <h2 class="right-card-headtwo">Yes</h2>
+                </div>
+                <div class="sec-two-right-card">
+                    <h1 class="right-card-head">Live Classes</h1>
+                    <h2 class="right-card-headtwo">Yes</h2>
+                </div>
                 <div class="sec-two-right-button">
-                    <a href="https://wa.me/919977723584?text=Hi!%20I'm%20interested%20in%20the%20Python%20with%20Django%20course.%20Could%20you%20share%20more%20details%3F" target="_blank"><button>Enroll Now</button></a>
+                    <a href="https://wa.me/919977723584?text=Hi!%20I'm%20interested%20in%20the%20Python%20with%20Django%20course.%20Could%20you%20share%20more%20details%3F"
+                        target="_blank"><button>Enroll Now</button></a>
                 </div>
             </div>
         </div>
@@ -278,38 +334,75 @@
         <h2>Frequently Asked <span>Questions</span></h2>
         <div class="faq">
 
-                <div class="faq-item">
-                    <div class="faq-question"><p>What is Django?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It is used by companies like Instagram, Pinterest, and Disqus.</p></div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>What is Django?</p><span class="icon">+</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>Do I need Python knowledge before joining?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>Basic Python knowledge is helpful but not required. We cover Python OOP in detail before moving to Django.</p></div>
+                <div class="faq-answer">
+                    <p>Django is a high-level Python web framework that encourages rapid development and clean,
+                        pragmatic design. It is used by companies like Instagram, Pinterest, and Disqus.</p>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>What is Django REST Framework?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>DRF is a powerful toolkit for building REST APIs in Django. It handles serialisation, authentication, and API views.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Do I need Python knowledge before joining?</p><span class="icon">+</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>Can I get a job after this course?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>Yes. Django developers are in high demand. Entry-level roles start at ₹4–6 LPA and senior positions at ₹10–18 LPA.</p></div>
+                <div class="faq-answer">
+                    <p>Basic Python knowledge is helpful but not required. We cover Python OOP in detail before moving
+                        to Django.</p>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>What database is used?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>We primarily use PostgreSQL, the most popular production database for Django applications.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>What is Django REST Framework?</p><span class="icon">+</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>Is deployment covered?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>Yes. We cover Docker containerisation and AWS EC2 deployment in detail.</p></div>
+                <div class="faq-answer">
+                    <p>DRF is a powerful toolkit for building REST APIs in Django. It handles serialisation,
+                        authentication, and API views.</p>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>How is Django different from Flask?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>Django is a full-featured framework (batteries included) with ORM, admin, auth built-in. Flask is a micro-framework best for small apps.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Can I get a job after this course?</p><span class="icon">+</span>
                 </div>
-                <div class="faq-item">
-                    <div class="faq-question"><p>Will I get a certificate?</p><span class="icon">+</span></div>
-                    <div class="faq-answer"><p>Yes, 3 ISO-certified certifications after successful completion.</p></div>
+                <div class="faq-answer">
+                    <p>Yes. Django developers are in high demand. Entry-level roles start at ₹4–6 LPA and senior
+                        positions at ₹10–18 LPA.</p>
                 </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>What database is used?</p><span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>We primarily use PostgreSQL, the most popular production database for Django applications.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Is deployment covered?</p><span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes. We cover Docker containerisation and AWS EC2 deployment in detail.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>How is Django different from Flask?</p><span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Django is a full-featured framework (batteries included) with ORM, admin, auth built-in. Flask is
+                        a micro-framework best for small apps.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <p>Will I get a certificate?</p><span class="icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, 3 ISO-certified certifications after successful completion.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -324,79 +417,99 @@
                         <div class="rating-count">Course Rating</div>
                     </div>
                     <div class="rating-bars">
-                        <div class="rating-bar-row"><span class="bar-stars">5 ★</span><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div><span class="bar-pct">85%</span></div>
-                        <div class="rating-bar-row"><span class="bar-stars">4 ★</span><div class="bar-track"><div class="bar-fill" style="width:11%"></div></div><span class="bar-pct">11%</span></div>
-                        <div class="rating-bar-row"><span class="bar-stars">3 ★</span><div class="bar-track"><div class="bar-fill" style="width:3%"></div></div><span class="bar-pct">3%</span></div>
-                        <div class="rating-bar-row"><span class="bar-stars">2 ★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span class="bar-pct">1%</span></div>
-                        <div class="rating-bar-row"><span class="bar-stars">1 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span class="bar-pct">0%</span></div>
+                        <div class="rating-bar-row"><span class="bar-stars">5 ★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:85%"></div>
+                            </div><span class="bar-pct">85%</span>
+                        </div>
+                        <div class="rating-bar-row"><span class="bar-stars">4 ★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:11%"></div>
+                            </div><span class="bar-pct">11%</span>
+                        </div>
+                        <div class="rating-bar-row"><span class="bar-stars">3 ★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:3%"></div>
+                            </div><span class="bar-pct">3%</span>
+                        </div>
+                        <div class="rating-bar-row"><span class="bar-stars">2 ★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:1%"></div>
+                            </div><span class="bar-pct">1%</span>
+                        </div>
+                        <div class="rating-bar-row"><span class="bar-stars">1 ★</span>
+                            <div class="bar-track">
+                                <div class="bar-fill" style="width:0%"></div>
+                            </div><span class="bar-pct">0%</span>
+                        </div>
                     </div>
                 </div>
-               <div class="reviews-grid">
-                        <div class="review-card">
-                            <div class="review-top">
-                                <div class="review-avatar" style="background:#ede9fe;color:#7c3aed">AK</div>
-                                <div>
-                                    <div class="review-name">Aman Kumar</div>
-                                    <div class="review-stars">★★★★★</div>
-                                    <div class="review-date">March 2025</div>
-                                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-top">
+                            <div class="review-avatar" style="background:#ede9fe;color:#7c3aed">AK</div>
+                            <div>
+                                <div class="review-name">Aman Kumar</div>
+                                <div class="review-stars">★★★★★</div>
+                                <div class="review-date">March 2025</div>
                             </div>
-                            <p class="review-text">Best C and C++ course I've taken. The way pointers and memory
-                                management are explained with real examples is brilliant. Got placed as a backend
-                                developer within 3 months of completing this. Highly recommend!</p>
-                            <div class="helpful">👍 <span>118 people</span> found this helpful</div>
                         </div>
-
-                        <div class="review-card">
-                            <div class="review-top">
-                                <div class="review-avatar" style="background:#dcfce7;color:#059669">PS</div>
-                                <div>
-                                    <div class="review-name">Pooja Sharma</div>
-                                    <div class="review-stars">★★★★★</div>
-                                    <div class="review-date">February 2025</div>
-                                </div>
-                            </div>
-                            <p class="review-text">I was completely new to programming. This course took me from
-                                zero to writing complex programs in C++. The STL and DSA section is gold for
-                                cracking placement interviews. Cleared TCS and Infosys!</p>
-                            <div class="helpful">👍 <span>92 people</span> found this helpful</div>
-                        </div>
-
-                        <div class="review-card">
-                            <div class="review-top">
-                                <div class="review-avatar" style="background:#fef3c7;color:#d97706">RV</div>
-                                <div>
-                                    <div class="review-name">Rahul Verma</div>
-                                    <div class="review-stars">★★★★★</div>
-                                    <div class="review-date">January 2025</div>
-                                </div>
-                            </div>
-                            <p class="review-text">The OOP section in C++ is the best I've seen. Classes,
-                                inheritance, virtual functions — everything explained with practical examples.
-                                Now I code in C++ for competitive programming on Codeforces and LeetCode.</p>
-                            <div class="helpful">👍 <span>74 people</span> found this helpful</div>
-                        </div>
-
-                        <div class="review-card">
-                            <div class="review-top">
-                                <div class="review-avatar" style="background:#dbeafe;color:#2563eb">SM</div>
-                                <div>
-                                    <div class="review-name">Shivam Mishra</div>
-                                    <div class="review-stars">★★★★☆</div>
-                                    <div class="review-date">December 2024</div>
-                                </div>
-                            </div>
-                            <p class="review-text">Very structured course. Starting with C built my fundamentals
-                                strong before moving to C++. The DSA and algorithms section helped me crack
-                                coding rounds. Good faculty, responsive support team.</p>
-                            <div class="helpful">👍 <span>58 people</span> found this helpful</div>
-                        </div>
+                        <p class="review-text">Best C and C++ course I've taken. The way pointers and memory
+                            management are explained with real examples is brilliant. Got placed as a backend
+                            developer within 3 months of completing this. Highly recommend!</p>
+                        <div class="helpful">👍 <span>118 people</span> found this helpful</div>
                     </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <div class="review-avatar" style="background:#dcfce7;color:#059669">PS</div>
+                            <div>
+                                <div class="review-name">Pooja Sharma</div>
+                                <div class="review-stars">★★★★★</div>
+                                <div class="review-date">February 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-text">I was completely new to programming. This course took me from
+                            zero to writing complex programs in C++. The STL and DSA section is gold for
+                            cracking placement interviews. Cleared TCS and Infosys!</p>
+                        <div class="helpful">👍 <span>92 people</span> found this helpful</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <div class="review-avatar" style="background:#fef3c7;color:#d97706">RV</div>
+                            <div>
+                                <div class="review-name">Rahul Verma</div>
+                                <div class="review-stars">★★★★★</div>
+                                <div class="review-date">January 2025</div>
+                            </div>
+                        </div>
+                        <p class="review-text">The OOP section in C++ is the best I've seen. Classes,
+                            inheritance, virtual functions — everything explained with practical examples.
+                            Now I code in C++ for competitive programming on Codeforces and LeetCode.</p>
+                        <div class="helpful">👍 <span>74 people</span> found this helpful</div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-top">
+                            <div class="review-avatar" style="background:#dbeafe;color:#2563eb">SM</div>
+                            <div>
+                                <div class="review-name">Shivam Mishra</div>
+                                <div class="review-stars">★★★★☆</div>
+                                <div class="review-date">December 2024</div>
+                            </div>
+                        </div>
+                        <p class="review-text">Very structured course. Starting with C built my fundamentals
+                            strong before moving to C++. The DSA and algorithms section helped me crack
+                            coding rounds. Good faculty, responsive support team.</p>
+                        <div class="helpful">👍 <span>58 people</span> found this helpful</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-      <footer>
+    <footer>
 
         <div class="footer-partone">
 
@@ -413,7 +526,7 @@
                 </div>
 
 
-                 <div class="footer-log">
+                <div class="footer-log">
                     <div class="logo-box">
                         <img src="./img/course_img/cmmi-removebg-preview-3.png" alt="CMMI">
                     </div>
@@ -510,7 +623,7 @@
                     <div class="contact-no">
                         <ul class="phone-list">
 
-                               <li><a href="tel:6263945418">+91 6263-945-418 ,</a></li>
+                            <li><a href="tel:6263945418">+91 6263-945-418 ,</a></li>
                             <li><a href="tel:9977723584">+91 9977-723-584 </a></li>
                         </ul>
                     </div>
@@ -529,7 +642,8 @@
                     <div class="footer-contact-location">
                         <a href="https://www.google.com/maps/place/CANARA+BANK+-+INDORE+PALASIA+POINT/@22.7229014,75.8875932,20.5z/data=!4m7!3m6!1s0x3962fd4ea8f55ef5:0xc0faeb545450efb5!4b1!8m2!3d22.7230581!4d75.8878384!16s%2Fg%2F1q62fh6ws?entry=ttu&g_ep=EgoyMDI2MDYwMy4xIKXMDSoASAFQAw%3D%3D"
                             target="_blank">
-                            <b>Third Branch (Indore):</b>Office No.104 , Day Tower , Above Canara bank, Behind Shekhar central , Palasia Square Indore
+                            <b>Third Branch (Indore):</b>Office No.104 , Day Tower , Above Canara bank, Behind Shekhar
+                            central , Palasia Square Indore
 
                         </a>
                     </div>
@@ -546,7 +660,7 @@
                     </div>
                     <div class="contact-no">
                         <ul class="phone-list">
-                          
+
                             <li><a href="tel:+919977085405">+91 99770-85405 ,</a></li>
                             <li><a href="tel:9977723584">+91 9977-723-584 </a></li>
                         </ul>
@@ -861,7 +975,8 @@
 
 
     </footer>
-</div>
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
