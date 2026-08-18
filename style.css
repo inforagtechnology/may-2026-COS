@@ -458,7 +458,7 @@ body {
         justify-content: center;
     }
     .home-part-one {
-        /* padding: 40px; */
+     padding: 40px; 
         /* Reduce padding for smaller screens */
         width: 100%;
         /* Take up more width on smaller screens */
@@ -1629,7 +1629,7 @@ img { display: block; max-width: 100%; }
 
 
 .stats-container {
-  width: 90%;
+  width: 80%;
   margin: 40px auto;
   background: linear-gradient(135deg, #001a4d, #000c2e);
   border-radius: 16px;
