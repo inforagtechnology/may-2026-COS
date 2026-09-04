@@ -1440,7 +1440,7 @@ img { display: block; max-width: 100%; }
   .fs-img-wrap { border-radius: 16px; }
   .fs-badge { padding: 10px 14px; bottom: -16px; left: 16px; }
   .fs-row.rev .fs-badge { right: 16px; left: auto; }
-  .fs-header { margin-bottom: 48px; }
+  .fs-header { margin-bottom: 48px;margin: 20px; }
   .fs-header p { font-size: 15px; }
   .fs-text > p { font-size: 15px; }
   .fs-list li  { font-size: 14px; }
